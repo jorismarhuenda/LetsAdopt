@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ape-0N-u8k">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
@@ -14,11 +14,11 @@
             <objects>
                 <viewController id="ape-0N-u8k" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rCa-2v-TKp">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UHO-vx-ffz" customClass="HalfRoundedUIView" customModule="AdoptMe" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="216" width="414" height="680"/>
+                                <rect key="frame" x="0.0" y="246" width="428" height="680"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login with scocial media" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WBB-2h-Lx3">
                                         <rect key="frame" x="40" y="40" width="148" height="17"/>
@@ -31,11 +31,11 @@
                                         <state key="normal" image="fb-button"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a3G-Jd-fHq">
-                                        <rect key="frame" x="240" y="69" width="134" height="43"/>
+                                        <rect key="frame" x="254" y="69" width="134" height="43"/>
                                         <state key="normal" image="google-button"/>
                                     </button>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="PPF-FA-d6R" customClass="MDCOutlinedTextField">
-                                        <rect key="frame" x="40" y="178" width="334" height="44"/>
+                                        <rect key="frame" x="40" y="178" width="348" height="44"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="360" id="I3M-20-aTf"/>
                                             <constraint firstAttribute="height" constant="44" id="h2U-5a-PQi"/>
@@ -63,7 +63,7 @@
                                         </variation>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="EFZ-bK-C9X" customClass="MDCOutlinedTextField">
-                                        <rect key="frame" x="40" y="252" width="334" height="44"/>
+                                        <rect key="frame" x="40" y="252" width="348" height="44"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="44" id="Vz8-3d-9uu"/>
                                         </constraints>
@@ -81,10 +81,10 @@
                                         </variation>
                                     </textField>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W4b-EO-Cdh">
-                                        <rect key="frame" x="87" y="137" width="240" height="16"/>
+                                        <rect key="frame" x="94" y="137" width="240" height="16"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RTh-LY-HC2">
-                                                <rect key="frame" x="0.0" y="7.5" width="240" height="1"/>
+                                                <rect key="frame" x="0.0" y="7.6666666666666856" width="240" height="1"/>
                                                 <color key="backgroundColor" name="AppSecondaryColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="1" id="Nlk-Sj-SEV"/>
@@ -209,7 +209,7 @@
                                         </variation>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QaK-hq-o26">
-                                        <rect key="frame" x="40" y="316" width="334" height="20"/>
+                                        <rect key="frame" x="40" y="316" width="348" height="20"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IJj-0F-KhY" customClass="M13Checkbox" customModule="M13Checkbox">
                                                 <rect key="frame" x="0.0" y="3" width="14" height="14"/>
@@ -267,7 +267,7 @@
                                                 </variation>
                                             </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stay logged in" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kKy-5H-GuM">
-                                                <rect key="frame" x="24" y="1.5" width="86" height="17"/>
+                                                <rect key="frame" x="24" y="1.6666666666666288" width="86" height="17"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="17" id="pjO-bn-Ofq"/>
                                                 </constraints>
@@ -286,7 +286,7 @@
                                                 </variation>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kxA-CZ-901">
-                                                <rect key="frame" x="224" y="-4.5" width="110" height="29"/>
+                                                <rect key="frame" x="238" y="-4.3333333333333712" width="110" height="29"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
                                                 <state key="normal" title="Forgot password?">
                                                     <color key="titleColor" name="AppSecondaryColor"/>
@@ -352,7 +352,7 @@
                                         </variation>
                                     </view>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GMa-EN-v1f" customClass="MDCButton">
-                                        <rect key="frame" x="62" y="372" width="290" height="44"/>
+                                        <rect key="frame" x="69" y="372" width="290" height="44"/>
                                         <color key="backgroundColor" name="AppRedColor"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="44" id="6ie-ql-wKq"/>
@@ -386,7 +386,7 @@
                                         </variation>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6Fy-vp-iEp">
-                                        <rect key="frame" x="128.5" y="434" width="157" height="29"/>
+                                        <rect key="frame" x="135.66666666666666" y="434" width="156.99999999999997" height="29"/>
                                         <color key="tintColor" name="AppSecondaryColor"/>
                                         <state key="normal">
                                             <attributedString key="attributedTitle">
@@ -408,7 +408,7 @@
                                         </state>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="For demo: Login status" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ixD-uG-jZL">
-                                        <rect key="frame" x="110.5" y="528.5" width="193.5" height="23"/>
+                                        <rect key="frame" x="117.33333333333333" y="528.66666666666663" width="193.33333333333337" height="23"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -573,7 +573,7 @@
                                 </variation>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xcy-vf-AJB">
-                                <rect key="frame" x="40" y="64" width="178" height="60"/>
+                                <rect key="frame" x="40" y="64" width="178" height="59.666666666666657"/>
                                 <attributedString key="attributedText">
                                     <fragment>
                                         <string key="content">Hello,
@@ -588,7 +588,7 @@ Welcome back!</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="corgi-hello" translatesAutoresizingMaskIntoConstraints="NO" id="mSy-ap-LmN">
-                                <rect key="frame" x="234" y="111" width="144" height="117"/>
+                                <rect key="frame" x="248" y="141" width="144" height="117"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="144" id="tAO-Ux-aQf"/>
                                     <constraint firstAttribute="height" constant="117" id="xJB-ri-laC"/>
@@ -692,14 +692,14 @@ Welcome back!</string>
             <objects>
                 <viewController id="8ex-cm-Ty1" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="y8l-VR-x2e">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eWa-JN-bqj" customClass="HalfRoundedUIView" customModule="AdoptMe" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="216" width="414" height="680"/>
+                                <rect key="frame" x="0.0" y="246" width="428" height="680"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="sIX-qU-qHZ" customClass="MDCOutlinedTextField">
-                                        <rect key="frame" x="40" y="45" width="334" height="44"/>
+                                        <rect key="frame" x="40" y="45" width="348" height="44"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="44" id="TeG-KP-Hqs"/>
                                         </constraints>
@@ -717,7 +717,7 @@ Welcome back!</string>
                                         </variation>
                                     </textField>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pqT-dH-sAU">
-                                        <rect key="frame" x="44" y="49" width="326" height="36"/>
+                                        <rect key="frame" x="44" y="49" width="340" height="36"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="36" id="HLz-OL-QMO"/>
@@ -734,7 +734,7 @@ Welcome back!</string>
                                         </variation>
                                     </view>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Rxh-e8-QCj" customClass="FPNTextField" customModule="FlagPhoneNumber">
-                                        <rect key="frame" x="44" y="49" width="326" height="44"/>
+                                        <rect key="frame" x="44" y="49" width="340" height="44"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="44" id="6by-SK-NOT"/>
                                             <constraint firstAttribute="height" constant="44" id="V2i-h3-1nw"/>
@@ -764,7 +764,7 @@ Welcome back!</string>
                                         </variation>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="LRd-qh-E0c" customClass="MDCOutlinedTextField">
-                                        <rect key="frame" x="40" y="119" width="334" height="44"/>
+                                        <rect key="frame" x="40" y="119" width="348" height="44"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="44" id="z4b-br-mvw"/>
                                         </constraints>
@@ -782,7 +782,7 @@ Welcome back!</string>
                                         </variation>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Taq-iM-hwh" customClass="MDCOutlinedTextField">
-                                        <rect key="frame" x="40" y="193" width="334" height="44"/>
+                                        <rect key="frame" x="40" y="193" width="348" height="44"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="44" id="b7L-yy-K9Z"/>
                                         </constraints>
@@ -800,7 +800,7 @@ Welcome back!</string>
                                         </variation>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7An-Yd-ynD" customClass="MDCButton">
-                                        <rect key="frame" x="62" y="347" width="290" height="44"/>
+                                        <rect key="frame" x="69" y="347" width="290" height="44"/>
                                         <color key="backgroundColor" name="AppRedColor"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="44" id="ft3-xS-o8j"/>
@@ -834,7 +834,7 @@ Welcome back!</string>
                                         </variation>
                                     </button>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="rH4-m7-wV7" customClass="MDCOutlinedTextField">
-                                        <rect key="frame" x="40" y="267" width="334" height="44"/>
+                                        <rect key="frame" x="40" y="267" width="348" height="44"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="44" id="Hb6-0t-xDK"/>
                                         </constraints>
@@ -852,7 +852,7 @@ Welcome back!</string>
                                         </variation>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SuV-NP-PkL">
-                                        <rect key="frame" x="130" y="409" width="154" height="29"/>
+                                        <rect key="frame" x="137" y="409" width="154" height="29"/>
                                         <color key="tintColor" name="AppSecondaryColor"/>
                                         <state key="normal">
                                             <attributedString key="attributedTitle">
@@ -1049,7 +1049,7 @@ Welcome back!</string>
                                 </variation>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bJP-VG-jdK">
-                                <rect key="frame" x="40" y="64" width="191.5" height="60"/>
+                                <rect key="frame" x="40.000000000000014" y="64" width="191.33333333333337" height="59.666666666666657"/>
                                 <attributedString key="attributedText">
                                     <fragment>
                                         <string key="content">Hello,
@@ -1064,7 +1064,7 @@ Fill in to register!</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="corgi-hello" translatesAutoresizingMaskIntoConstraints="NO" id="2DK-co-zzH">
-                                <rect key="frame" x="234" y="111" width="144" height="117"/>
+                                <rect key="frame" x="248" y="141" width="144" height="117"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="117" id="5QW-14-QJO"/>
                                     <constraint firstAttribute="width" constant="144" id="m4i-L2-3eg"/>
@@ -1152,14 +1152,14 @@ Fill in to register!</string>
             <objects>
                 <viewController id="aK8-Zo-2kL" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Grs-70-Dmv">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o3R-WR-UgM" customClass="HalfRoundedUIView" customModule="AdoptMe" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="216" width="414" height="680"/>
+                                <rect key="frame" x="0.0" y="246" width="428" height="680"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="RBi-w7-1un" customClass="MDCOutlinedTextField">
-                                        <rect key="frame" x="40" y="113" width="334" height="44"/>
+                                        <rect key="frame" x="40" y="113" width="348" height="44"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="44" id="M0w-sz-yzj"/>
                                             <constraint firstAttribute="height" constant="44" id="u3O-xn-5OZ"/>
@@ -1189,7 +1189,7 @@ Fill in to register!</string>
                                         </variation>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="iTz-Zk-a9s" customClass="MDCOutlinedTextField">
-                                        <rect key="frame" x="40" y="187" width="334" height="44"/>
+                                        <rect key="frame" x="40" y="187" width="348" height="44"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="44" id="Xg0-Bh-htF"/>
                                         </constraints>
@@ -1235,7 +1235,7 @@ Fill in to register!</string>
                                         </variation>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XhF-Ge-gz3" customClass="MDCButton">
-                                        <rect key="frame" x="62" y="415" width="290" height="44"/>
+                                        <rect key="frame" x="69" y="415" width="290" height="44"/>
                                         <color key="backgroundColor" name="AppRedColor"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="44" id="8X0-gw-6OU"/>
@@ -1269,7 +1269,7 @@ Fill in to register!</string>
                                         </variation>
                                     </button>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="qmo-ke-vWi" customClass="MDCOutlinedTextField">
-                                        <rect key="frame" x="40" y="335" width="334" height="44"/>
+                                        <rect key="frame" x="40" y="335" width="348" height="44"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="44" id="rAW-Bq-MCZ"/>
                                         </constraints>
@@ -1287,7 +1287,7 @@ Fill in to register!</string>
                                         </variation>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="HGm-7H-DdS" customClass="MDCOutlinedTextField">
-                                        <rect key="frame" x="250" y="261" width="124" height="44"/>
+                                        <rect key="frame" x="250" y="261" width="138" height="44"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="120" id="4Yx-4L-6n3"/>
                                             <constraint firstAttribute="height" constant="44" id="lnK-tj-6pn"/>
@@ -1312,7 +1312,7 @@ Fill in to register!</string>
                                         </variation>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qRF-2d-FCM">
-                                        <rect key="frame" x="62" y="479" width="290" height="44"/>
+                                        <rect key="frame" x="69" y="479" width="290" height="44"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                         <state key="normal" title="BACK">
                                             <color key="titleColor" name="AppRedColor"/>
@@ -1482,7 +1482,7 @@ Fill in to register!</string>
                                 </variation>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XHm-A5-Eqg">
-                                <rect key="frame" x="40" y="64" width="179.5" height="60"/>
+                                <rect key="frame" x="40.000000000000014" y="64" width="179.33333333333337" height="59.666666666666657"/>
                                 <attributedString key="attributedText">
                                     <fragment>
                                         <string key="content">Tell us
@@ -1497,7 +1497,7 @@ about your self!</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Asb-kx-bIf">
-                                <rect key="frame" x="242" y="148" width="136" height="136"/>
+                                <rect key="frame" x="256" y="178" width="136" height="136"/>
                                 <color key="backgroundColor" systemColor="systemGray5Color"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="136" id="HYB-8D-Mkb"/>
@@ -1599,11 +1599,11 @@ about your self!</string>
             <objects>
                 <viewController id="LDY-Hi-JID" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VzM-NY-2gE">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B5g-KQ-ntz">
-                                <rect key="frame" x="40" y="64" width="207" height="60"/>
+                                <rect key="frame" x="39.999999999999986" y="64" width="206.66666666666663" height="59.666666666666657"/>
                                 <attributedString key="attributedText">
                                     <fragment>
                                         <string key="content">Fill in to
@@ -1618,10 +1618,10 @@ recover password</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v4I-kD-EYX" customClass="HalfRoundedUIView" customModule="AdoptMe" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="216" width="414" height="680"/>
+                                <rect key="frame" x="0.0" y="246" width="428" height="680"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4hw-IT-YA8">
-                                        <rect key="frame" x="36" y="118" width="342" height="46"/>
+                                        <rect key="frame" x="36" y="118" width="356" height="46"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="46" id="cb5-RS-F01"/>
                                         </constraints>
@@ -1667,7 +1667,7 @@ recover password</string>
                                         </variation>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="GQK-W2-Jmx" customClass="FPNTextField" customModule="FlagPhoneNumber">
-                                        <rect key="frame" x="40" y="118" width="334" height="44"/>
+                                        <rect key="frame" x="40" y="118" width="348" height="44"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="44" id="v0u-nY-i8Y"/>
                                         </constraints>
@@ -1703,7 +1703,7 @@ recover password</string>
                                         </variation>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V90-FP-HVO" customClass="MDCButton">
-                                        <rect key="frame" x="62" y="198" width="290" height="44"/>
+                                        <rect key="frame" x="69" y="198" width="290" height="44"/>
                                         <color key="backgroundColor" name="AppRedColor"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="44" id="7uk-SY-f69"/>
@@ -1783,14 +1783,14 @@ recover password</string>
                                         </variation>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please fill in your account's number phone to receive verify code" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KyU-o2-CC6">
-                                        <rect key="frame" x="32" y="45" width="350" height="43"/>
+                                        <rect key="frame" x="32" y="45" width="364" height="43"/>
                                         <color key="tintColor" name="AppTextColor"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="18"/>
                                         <color key="textColor" name="AppTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BMC-EO-wVt">
-                                        <rect key="frame" x="62" y="262" width="290" height="44"/>
+                                        <rect key="frame" x="69" y="262" width="290" height="44"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                         <state key="normal" title="BACK">
                                             <color key="titleColor" name="AppRedColor"/>
@@ -2002,7 +2002,7 @@ recover password</string>
                                 </variation>
                             </view>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="corgi-hello" translatesAutoresizingMaskIntoConstraints="NO" id="MiG-bh-TH0">
-                                <rect key="frame" x="234" y="111" width="144" height="117"/>
+                                <rect key="frame" x="248" y="141" width="144" height="117"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="144" id="F58-RV-z3c"/>
                                     <constraint firstAttribute="height" constant="117" id="yBL-U1-cVh"/>
@@ -2087,11 +2087,11 @@ recover password</string>
             <objects>
                 <viewController id="MhH-5K-bfq" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="NLg-JR-CTx">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p7w-6G-Ua4">
-                                <rect key="frame" x="40" y="64" width="151.5" height="60"/>
+                                <rect key="frame" x="40" y="64" width="151.66666666666666" height="59.666666666666657"/>
                                 <attributedString key="attributedText">
                                     <fragment>
                                         <string key="content">Verify
@@ -2106,10 +2106,10 @@ your account</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X7J-kJ-Kh8" customClass="HalfRoundedUIView" customModule="AdoptMe" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="216" width="414" height="680"/>
+                                <rect key="frame" x="0.0" y="246" width="428" height="680"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YzP-0U-V9r" customClass="MDCButton">
-                                        <rect key="frame" x="62" y="228" width="290" height="44"/>
+                                        <rect key="frame" x="69" y="228" width="290" height="44"/>
                                         <color key="backgroundColor" name="AppRedColor"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="44" id="Me3-fo-Y5f"/>
@@ -2189,14 +2189,14 @@ your account</string>
                                         </variation>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter OTP code to verify" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yE4-6H-FFc">
-                                        <rect key="frame" x="105" y="45" width="204" height="22"/>
+                                        <rect key="frame" x="112" y="45" width="204" height="22"/>
                                         <color key="tintColor" name="AppTextColor"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="18"/>
                                         <color key="textColor" name="AppTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="inq-su-buT" customClass="OTPFieldView" customModule="OTPFieldView">
-                                        <rect key="frame" x="30" y="97" width="354" height="50"/>
+                                        <rect key="frame" x="30" y="97" width="368" height="50"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="MFd-oR-bk4"/>
@@ -2213,7 +2213,7 @@ your account</string>
                                         </variation>
                                     </view>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="95A-rh-LWR">
-                                        <rect key="frame" x="62" y="292" width="290" height="44"/>
+                                        <rect key="frame" x="69" y="292" width="290" height="44"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                         <state key="normal" title="BACK">
                                             <color key="titleColor" name="AppRedColor"/>
@@ -2268,7 +2268,7 @@ your account</string>
                                         </variation>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QgS-kX-zIR">
-                                        <rect key="frame" x="135" y="163" width="144" height="29"/>
+                                        <rect key="frame" x="142" y="163" width="144" height="29"/>
                                         <color key="tintColor" name="AppSecondaryColor"/>
                                         <state key="normal">
                                             <attributedString key="attributedTitle">
@@ -2460,7 +2460,7 @@ your account</string>
                                 </variation>
                             </view>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="corgi-hello" translatesAutoresizingMaskIntoConstraints="NO" id="0JJ-Ak-dsr">
-                                <rect key="frame" x="234" y="111" width="144" height="117"/>
+                                <rect key="frame" x="248" y="141" width="144" height="117"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="144" id="2rn-NN-jHI"/>
                                     <constraint firstAttribute="height" constant="117" id="Usj-j8-303"/>
@@ -2588,11 +2588,11 @@ your account</string>
             <objects>
                 <viewController id="Eun-eE-0bc" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8fj-5M-UyV">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5nr-Mh-wpr">
-                                <rect key="frame" x="40" y="64" width="168" height="60"/>
+                                <rect key="frame" x="40" y="64" width="168" height="59.666666666666657"/>
                                 <attributedString key="attributedText">
                                     <fragment>
                                         <string key="content">Enter
@@ -2607,7 +2607,7 @@ new password</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hey-by-J83" customClass="HalfRoundedUIView" customModule="AdoptMe" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="216" width="414" height="680"/>
+                                <rect key="frame" x="0.0" y="246" width="428" height="680"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="7wf-z8-JjV" customClass="MDCOutlinedTextField">
                                         <rect key="frame" x="278" y="119" width="340" height="44"/>
@@ -2640,7 +2640,7 @@ new password</string>
                                         </variation>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AuS-DE-YY6" customClass="MDCButton">
-                                        <rect key="frame" x="62" y="272" width="290" height="44"/>
+                                        <rect key="frame" x="69" y="272" width="290" height="44"/>
                                         <color key="backgroundColor" name="AppRedColor"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="44" id="1ik-Dg-xqf"/>
@@ -2720,7 +2720,7 @@ new password</string>
                                         </variation>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="5mV-eN-C2M" customClass="MDCOutlinedTextField">
-                                        <rect key="frame" x="40" y="118" width="334" height="44"/>
+                                        <rect key="frame" x="40" y="118" width="348" height="44"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="44" id="BPJ-68-FaO"/>
                                         </constraints>
@@ -2786,7 +2786,7 @@ new password</string>
                                         </variation>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="WYh-rg-E3z" customClass="MDCOutlinedTextField">
-                                        <rect key="frame" x="40" y="192" width="334" height="44"/>
+                                        <rect key="frame" x="40" y="192" width="348" height="44"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="44" id="wHs-1u-hYp"/>
                                         </constraints>
@@ -2804,7 +2804,7 @@ new password</string>
                                         </variation>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sOE-8P-ZHG">
-                                        <rect key="frame" x="30" y="45" width="354" height="43"/>
+                                        <rect key="frame" x="30" y="45" width="368" height="43"/>
                                         <color key="tintColor" name="AppTextColor"/>
                                         <string key="text">Verify successfully
 Enter your new password to login
@@ -2814,7 +2814,7 @@ Enter your new password to login
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b8E-i0-bRo">
-                                        <rect key="frame" x="62" y="336" width="290" height="44"/>
+                                        <rect key="frame" x="69" y="336" width="290" height="44"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                         <state key="normal" title="BACK TO LOGIN">
                                             <color key="titleColor" name="AppRedColor"/>
@@ -3024,7 +3024,7 @@ Enter your new password to login
                                 </variation>
                             </view>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="corgi-hello" translatesAutoresizingMaskIntoConstraints="NO" id="MDy-wS-QzQ">
-                                <rect key="frame" x="234" y="111" width="144" height="117"/>
+                                <rect key="frame" x="248" y="141" width="144" height="117"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="144" id="HLS-br-hy9"/>
                                     <constraint firstAttribute="height" constant="117" id="YQd-d6-sb2"/>
