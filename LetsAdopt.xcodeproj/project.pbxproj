@@ -17,6 +17,8 @@
 		ECA3656B27A73298008A9C46 /* LetsAdoptTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA3656A27A73298008A9C46 /* LetsAdoptTests.swift */; };
 		ECA3657527A73298008A9C46 /* LetsAdoptUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA3657427A73298008A9C46 /* LetsAdoptUITests.swift */; };
 		ECA3657727A73298008A9C46 /* LetsAdoptUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA3657627A73298008A9C46 /* LetsAdoptUITestsLaunchTests.swift */; };
+		ECA3658427A73463008A9C46 /* Introduction.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECA3658327A73463008A9C46 /* Introduction.storyboard */; };
+		ECA3658627A7352D008A9C46 /* Authentification.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECA3658527A7352D008A9C46 /* Authentification.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		ECA3657027A73298008A9C46 /* LetsAdoptUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LetsAdoptUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECA3657427A73298008A9C46 /* LetsAdoptUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetsAdoptUITests.swift; sourceTree = "<group>"; };
 		ECA3657627A73298008A9C46 /* LetsAdoptUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetsAdoptUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		ECA3658327A73463008A9C46 /* Introduction.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Introduction.storyboard; sourceTree = "<group>"; };
+		ECA3658527A7352D008A9C46 /* Authentification.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Authentification.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +113,8 @@
 				ECA3655E27A73297008A9C46 /* LaunchScreen.storyboard */,
 				ECA3656127A73297008A9C46 /* Info.plist */,
 				ECA3655927A73293008A9C46 /* LetsAdopt.xcdatamodeld */,
+				ECA3658327A73463008A9C46 /* Introduction.storyboard */,
+				ECA3658527A7352D008A9C46 /* Authentification.storyboard */,
 			);
 			path = LetsAdopt;
 			sourceTree = "<group>";
@@ -234,6 +240,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECA3658427A73463008A9C46 /* Introduction.storyboard in Resources */,
+				ECA3658627A7352D008A9C46 /* Authentification.storyboard in Resources */,
 				ECA3656027A73297008A9C46 /* LaunchScreen.storyboard in Resources */,
 				ECA3655D27A73297008A9C46 /* Assets.xcassets in Resources */,
 				ECA3655827A73293008A9C46 /* Main.storyboard in Resources */,
