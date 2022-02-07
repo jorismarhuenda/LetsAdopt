@@ -20,6 +20,7 @@
 		ECA3658427A73463008A9C46 /* Introduction.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECA3658327A73463008A9C46 /* Introduction.storyboard */; };
 		ECA3658627A7352D008A9C46 /* Authentification.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECA3658527A7352D008A9C46 /* Authentification.storyboard */; };
 		ECD21E1027B141F30022E26B /* IntroductionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD21E0F27B141F30022E26B /* IntroductionDelegate.swift */; };
+		ECD21E1427B143700022E26B /* GenderPickerViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD21E1327B143700022E26B /* GenderPickerViewDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		ECA3658327A73463008A9C46 /* Introduction.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Introduction.storyboard; sourceTree = "<group>"; };
 		ECA3658527A7352D008A9C46 /* Authentification.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Authentification.storyboard; sourceTree = "<group>"; };
 		ECD21E0F27B141F30022E26B /* IntroductionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroductionDelegate.swift; sourceTree = "<group>"; };
+		ECD21E1327B143700022E26B /* GenderPickerViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenderPickerViewDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,11 +109,12 @@
 		ECA3654F27A73293008A9C46 /* LetsAdopt */ = {
 			isa = PBXGroup;
 			children = (
+				ECD21E1127B1434F0022E26B /* Main */,
+				ECA3655627A73293008A9C46 /* Main.storyboard */,
 				ECD21E0D27B141BD0022E26B /* Introduction */,
 				ECA3655027A73293008A9C46 /* AppDelegate.swift */,
 				ECA3655227A73293008A9C46 /* SceneDelegate.swift */,
 				ECA3655427A73293008A9C46 /* ViewController.swift */,
-				ECA3655627A73293008A9C46 /* Main.storyboard */,
 				ECA3658527A7352D008A9C46 /* Authentification.storyboard */,
 				ECA3655C27A73297008A9C46 /* Assets.xcassets */,
 				ECA3655E27A73297008A9C46 /* LaunchScreen.storyboard */,
@@ -151,6 +154,22 @@
 			isa = PBXGroup;
 			children = (
 				ECD21E0F27B141F30022E26B /* IntroductionDelegate.swift */,
+			);
+			path = Delegate;
+			sourceTree = "<group>";
+		};
+		ECD21E1127B1434F0022E26B /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				ECD21E1227B1435A0022E26B /* Delegate */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		ECD21E1227B1435A0022E26B /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				ECD21E1327B143700022E26B /* GenderPickerViewDelegate.swift */,
 			);
 			path = Delegate;
 			sourceTree = "<group>";
@@ -290,6 +309,7 @@
 			files = (
 				ECD21E1027B141F30022E26B /* IntroductionDelegate.swift in Sources */,
 				ECA3655527A73293008A9C46 /* ViewController.swift in Sources */,
+				ECD21E1427B143700022E26B /* GenderPickerViewDelegate.swift in Sources */,
 				ECA3655127A73293008A9C46 /* AppDelegate.swift in Sources */,
 				ECA3655B27A73293008A9C46 /* LetsAdopt.xcdatamodeld in Sources */,
 				ECA3655327A73293008A9C46 /* SceneDelegate.swift in Sources */,
