@@ -55,3 +55,31 @@ extension IntroductionViewController: IntroductionDelegate {
         viewPager.select(index: pageControl.currentPage)
     }
 }
+
+extension IntroductionViewController: LZViewPagerDelegate, LZViewPagerDataSource {
+    func numberOfItems() -> Int {
+        return viewControllers.count
+    }
+    
+    func controller(at index: Int) -> UIViewController {
+        return viewControllers[index]
+    }
+    
+    func button(at index: Int) -> UIButton {
+        let dummyButton = UIButton()
+        
+        return dummyButton
+    }
+    
+    func shouldShowIndicator() -> Bool {
+        return false
+    }
+    
+    func heightForHeader() -> CGFloat {
+        return 0
+    }
+    
+    func didTransition(to index: Int) {
+        pageControl.currentPage = viewPager.currentIndex!
+    }
+}
