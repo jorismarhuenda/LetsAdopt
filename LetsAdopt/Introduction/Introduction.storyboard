@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Introduction View Controller-->
         <scene sceneID="vC4-ed-f01">
             <objects>
-                <viewController id="bYd-Z0-Z42" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="IntroductionViewController" id="bYd-Z0-Z42" customClass="IntroductionViewController" customModule="LetsAdopt" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2Gv-am-B0s">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -80,6 +80,10 @@
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="pageControl" destination="5T9-lB-LDW" id="XdS-n0-9Gr"/>
+                        <outlet property="viewPager" destination="F2U-c6-YeU" id="m1J-Ia-Fts"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tCT-bB-G1p" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
