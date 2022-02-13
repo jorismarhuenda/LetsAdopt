@@ -23,6 +23,9 @@
 		ECD21E1027B141F30022E26B /* IntroductionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD21E0F27B141F30022E26B /* IntroductionDelegate.swift */; };
 		ECD21E1427B143700022E26B /* GenderPickerViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD21E1327B143700022E26B /* GenderPickerViewDelegate.swift */; };
 		ECD21E1627B93CFD0022E26B /* IntroductionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD21E1527B93CFD0022E26B /* IntroductionViewController.swift */; };
+		ECD21E1827B93FB20022E26B /* LandingPage1VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD21E1727B93FB20022E26B /* LandingPage1VC.swift */; };
+		ECD21E1A27B93FF70022E26B /* LandingPage2VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD21E1927B93FF70022E26B /* LandingPage2VC.swift */; };
+		ECD21E1C27B940200022E26B /* WelcomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD21E1B27B940200022E26B /* WelcomeVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +68,9 @@
 		ECD21E0F27B141F30022E26B /* IntroductionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroductionDelegate.swift; sourceTree = "<group>"; };
 		ECD21E1327B143700022E26B /* GenderPickerViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenderPickerViewDelegate.swift; sourceTree = "<group>"; };
 		ECD21E1527B93CFD0022E26B /* IntroductionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroductionViewController.swift; sourceTree = "<group>"; };
+		ECD21E1727B93FB20022E26B /* LandingPage1VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingPage1VC.swift; sourceTree = "<group>"; };
+		ECD21E1927B93FF70022E26B /* LandingPage2VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingPage2VC.swift; sourceTree = "<group>"; };
+		ECD21E1B27B940200022E26B /* WelcomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,6 +170,9 @@
 				ECD21E0E27B141D40022E26B /* Delegate */,
 				ECA3658327A73463008A9C46 /* Introduction.storyboard */,
 				ECD21E1527B93CFD0022E26B /* IntroductionViewController.swift */,
+				ECD21E1727B93FB20022E26B /* LandingPage1VC.swift */,
+				ECD21E1927B93FF70022E26B /* LandingPage2VC.swift */,
+				ECD21E1B27B940200022E26B /* WelcomeVC.swift */,
 			);
 			path = Introduction;
 			sourceTree = "<group>";
@@ -198,7 +207,6 @@
 				7ECD9D1BDD1D5351760BC1A9 /* Pods-LetsAdopt.debug.xcconfig */,
 				6574BF99CDEE61EBE5C93C5B /* Pods-LetsAdopt.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -380,10 +388,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				ECD21E1027B141F30022E26B /* IntroductionDelegate.swift in Sources */,
+				ECD21E1C27B940200022E26B /* WelcomeVC.swift in Sources */,
 				ECA3655527A73293008A9C46 /* ViewController.swift in Sources */,
 				ECD21E1427B143700022E26B /* GenderPickerViewDelegate.swift in Sources */,
+				ECD21E1827B93FB20022E26B /* LandingPage1VC.swift in Sources */,
 				ECA3655127A73293008A9C46 /* AppDelegate.swift in Sources */,
 				ECA3655B27A73293008A9C46 /* LetsAdopt.xcdatamodeld in Sources */,
+				ECD21E1A27B93FF70022E26B /* LandingPage2VC.swift in Sources */,
 				ECA3655327A73293008A9C46 /* SceneDelegate.swift in Sources */,
 				ECD21E1627B93CFD0022E26B /* IntroductionViewController.swift in Sources */,
 			);
