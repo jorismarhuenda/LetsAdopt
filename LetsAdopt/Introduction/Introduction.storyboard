@@ -20,11 +20,18 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F2U-c6-YeU" customClass="LZViewPager" customModule="LZViewPager">
                                 <rect key="frame" x="0.0" y="44" width="428" height="848"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="bYd-Z0-Z42" id="9Mn-Z2-0BA"/>
+                                    <outlet property="delegate" destination="bYd-Z0-Z42" id="HPJ-zl-fFu"/>
+                                </connections>
                             </view>
                             <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="5T9-lB-LDW">
                                 <rect key="frame" x="136.33333333333331" y="474" width="155.33333333333331" height="25"/>
                                 <color key="pageIndicatorTintColor" name="AppGrayColor"/>
                                 <color key="currentPageIndicatorTintColor" name="AccentColor"/>
+                                <connections>
+                                    <action selector="changePageAct:" destination="bYd-Z0-Z42" eventType="valueChanged" id="Pz7-nN-UfE"/>
+                                </connections>
                             </pageControl>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="h0e-iA-yAZ"/>
@@ -89,10 +96,10 @@
             </objects>
             <point key="canvasLocation" x="155.07246376811597" y="122.54464285714285"/>
         </scene>
-        <!--View Controller-->
+        <!--Landing Page1VC-->
         <scene sceneID="Aw4-2r-Jgp">
             <objects>
-                <viewController id="23l-KS-92z" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LandingPage1VC" id="23l-KS-92z" customClass="LandingPage1VC" customModule="LetsAdopt" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lmX-bo-YJk">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -128,6 +135,9 @@
                                 <state key="normal" title="Skip">
                                     <color key="titleColor" name="AppSecondaryColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="skipAct:" destination="23l-KS-92z" eventType="touchUpInside" id="9yz-nr-lyO"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J29-bB-lyG">
                                 <rect key="frame" x="378" y="799.66666666666663" width="22" height="14"/>
@@ -136,6 +146,9 @@
                                     <constraint firstAttribute="height" constant="14" id="WIy-ls-qiS"/>
                                 </constraints>
                                 <state key="normal" image="next-gray-arrow"/>
+                                <connections>
+                                    <action selector="NextAct:" destination="23l-KS-92z" eventType="touchUpInside" id="0dZ-An-lFh"/>
+                                </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="landing-page-img-1" translatesAutoresizingMaskIntoConstraints="NO" id="e5L-Nl-SZb">
                                 <rect key="frame" x="106" y="267" width="216" height="225"/>
@@ -252,10 +265,10 @@
             </objects>
             <point key="canvasLocation" x="887" y="123"/>
         </scene>
-        <!--View Controller-->
+        <!--Landing Page2VC-->
         <scene sceneID="vUk-LT-pVI">
             <objects>
-                <viewController id="9Vu-SV-9u2" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LandingPage2VC" id="9Vu-SV-9u2" customClass="LandingPage2VC" customModule="LetsAdopt" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gum-iH-g7F">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -291,6 +304,9 @@
                                 <state key="normal" title="Skip">
                                     <color key="titleColor" name="AppSecondaryColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="skipAct:" destination="9Vu-SV-9u2" eventType="touchUpInside" id="gWs-Tc-rMJ"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DuQ-cn-Ned">
                                 <rect key="frame" x="378" y="799.66666666666663" width="22" height="14"/>
@@ -299,6 +315,9 @@
                                     <constraint firstAttribute="height" constant="14" id="xOi-v9-8pU"/>
                                 </constraints>
                                 <state key="normal" image="next-gray-arrow"/>
+                                <connections>
+                                    <action selector="nextAct:" destination="9Vu-SV-9u2" eventType="touchUpInside" id="8kD-NF-Fvq"/>
+                                </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="landing-page-img-2" translatesAutoresizingMaskIntoConstraints="NO" id="Buo-kc-2zN">
                                 <rect key="frame" x="78.666666666666686" y="233" width="271" height="273"/>
@@ -406,10 +425,10 @@
             </objects>
             <point key="canvasLocation" x="1600" y="123"/>
         </scene>
-        <!--View Controller-->
+        <!--WelcomeVC-->
         <scene sceneID="6e9-9W-oli">
             <objects>
-                <viewController id="pk1-s9-IPa" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="WelcomeVC" id="pk1-s9-IPa" customClass="WelcomeVC" customModule="LetsAdopt" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Jbf-88-deQ">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -468,7 +487,7 @@
                                     </mask>
                                 </variation>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="484-BY-ixM">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="484-BY-ixM" customClass="MDCButton">
                                 <rect key="frame" x="69" y="705.33333333333337" width="290" height="44"/>
                                 <color key="backgroundColor" name="AppRedColor"/>
                                 <constraints>
@@ -501,6 +520,9 @@
                                         <include reference="yZJ-tH-Yqh"/>
                                     </mask>
                                 </variation>
+                                <connections>
+                                    <action selector="registerAct:" destination="pk1-s9-IPa" eventType="touchUpInside" id="uN2-Bl-Mdy"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cJ3-Q7-hYt">
                                 <rect key="frame" x="151.66666666666666" y="775.33333333333337" width="124.99999999999997" height="31"/>
@@ -508,6 +530,9 @@
                                 <state key="normal" title="Login to continue">
                                     <color key="titleColor" name="AppSecondaryColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="loginAct:" destination="pk1-s9-IPa" eventType="touchUpInside" id="PvM-VC-vUa"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="1vX-ta-5g3"/>
@@ -584,6 +609,9 @@
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="registerButton" destination="484-BY-ixM" id="h5f-qL-M5e"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bgj-LQ-FtQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
