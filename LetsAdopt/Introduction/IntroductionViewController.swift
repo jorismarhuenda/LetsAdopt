@@ -36,4 +36,22 @@ class IntroductionViewController: UIViewController {
         
         viewPager.reload()
     }
+    
+    @IBAction func changePageAct (_ sender: Any) {
+        print(pageControl.currentPage)
+        viewPager.select(index: pageControl.currentPage)
+    }
+}
+
+extension IntroductionViewController: IntroductionDelegate {
+    func skipIntroduce() {
+        let destPage = viewControllers.count - 1
+        viewPager.select(index: destPage)
+        pageControl.currentPage = destPage
+    }
+    
+    func nextIntroduce() {
+        pageControl.currentPage += 1
+        viewPager.select(index: pageControl.currentPage)
+    }
 }

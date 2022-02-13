@@ -16,4 +16,12 @@ class LandingPage1VC: UIViewController {
 
         // Do any additional setup after loading the view.
     }
+    
+    @IBAction func skipAct (_ sender: Any) {
+        delegate?.skipIntroduce()
+    }
+    
+    @IBAction func NextAct (_ sender: Any) {
+        delegate?.nextIntroduce()
+    }
 }
