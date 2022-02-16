@@ -8,7 +8,7 @@
 
 import UIKit
 
-protocol CropOverlayDelegate: class {
+protocol CropOverlayDelegate: AnyObject {
     func didMoveCropOverlay(newFrame: CGRect)
 }
 

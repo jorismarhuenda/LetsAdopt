@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>BUNDLE_ID</key>
+	<string>com.jorismarhuenda.LetsAdopt</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>GCM_SENDER_ID</key>
+	<string>217276776268</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAQI5GUH21H9jO9AlZy2MfLg62Xbmr6pFw</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.217276776268-30hilggkbi3isevo0gk5du9bj8f645ns</string>
+	<key>CLIENT_ID</key>
+	<string>217276776268-30hilggkbi3isevo0gk5du9bj8f645ns.apps.googleusercontent.com</string>
+</dict>
+</plist>
