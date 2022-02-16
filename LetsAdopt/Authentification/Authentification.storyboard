@@ -715,6 +715,10 @@ Welcome back!</string>
                                                 <include reference="TeG-KP-Hqs"/>
                                             </mask>
                                         </variation>
+                                        <connections>
+                                            <action selector="dummyPhoneBeginEdit:" destination="8ex-cm-Ty1" eventType="editingDidBegin" id="CNi-GH-mUx"/>
+                                            <action selector="dummyPhoneEditEnd:" destination="8ex-cm-Ty1" eventType="editingDidEnd" id="vPJ-XT-GnW"/>
+                                        </connections>
                                     </textField>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pqT-dH-sAU">
                                         <rect key="frame" x="44" y="49" width="340" height="36"/>
@@ -832,6 +836,9 @@ Welcome back!</string>
                                                 <include reference="nAm-yc-yr5"/>
                                             </mask>
                                         </variation>
+                                        <connections>
+                                            <action selector="registerAct:" destination="8ex-cm-Ty1" eventType="touchUpInside" id="Jdb-eF-43d"/>
+                                        </connections>
                                     </button>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="rH4-m7-wV7" customClass="MDCOutlinedTextField">
                                         <rect key="frame" x="40" y="267" width="348" height="44"/>
@@ -872,6 +879,9 @@ Welcome back!</string>
                                                 </fragment>
                                             </attributedString>
                                         </state>
+                                        <connections>
+                                            <action selector="loginAct:" destination="8ex-cm-Ty1" eventType="touchUpInside" id="EPj-0s-sCD"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
