@@ -687,15 +687,15 @@ Welcome back!</string>
             </objects>
             <point key="canvasLocation" x="-243.75" y="76.811594202898561"/>
         </scene>
-        <!--View Controller-->
+        <!--Register View Controller-->
         <scene sceneID="oxO-o1-u5n">
             <objects>
-                <viewController id="8ex-cm-Ty1" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RegisterViewController" id="8ex-cm-Ty1" customClass="RegisterViewController" customModule="LetsAdopt" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="y8l-VR-x2e">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eWa-JN-bqj">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eWa-JN-bqj" customClass="HalfRoundedUIView" customModule="LetsAdopt" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="246" width="428" height="680"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="sIX-qU-qHZ" customClass="MDCOutlinedTextField">
@@ -733,7 +733,7 @@ Welcome back!</string>
                                             </mask>
                                         </variation>
                                     </view>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Rxh-e8-QCj">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Rxh-e8-QCj" customClass="FPNTextField" customModule="FlagPhoneNumber">
                                         <rect key="frame" x="44" y="49" width="340" height="44"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="44" id="6by-SK-NOT"/>
@@ -763,7 +763,7 @@ Welcome back!</string>
                                             </mask>
                                         </variation>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="LRd-qh-E0c">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="LRd-qh-E0c" customClass="MDCOutlinedTextField">
                                         <rect key="frame" x="40" y="119" width="348" height="44"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="44" id="z4b-br-mvw"/>
@@ -781,7 +781,7 @@ Welcome back!</string>
                                             </mask>
                                         </variation>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Taq-iM-hwh">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Taq-iM-hwh" customClass="MDCOutlinedTextField">
                                         <rect key="frame" x="40" y="193" width="348" height="44"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="44" id="b7L-yy-K9Z"/>
@@ -799,7 +799,7 @@ Welcome back!</string>
                                             </mask>
                                         </variation>
                                     </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7An-Yd-ynD">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7An-Yd-ynD" customClass="MDCButton">
                                         <rect key="frame" x="69" y="347" width="290" height="44"/>
                                         <color key="backgroundColor" name="AppRedColor"/>
                                         <constraints>
@@ -833,7 +833,7 @@ Welcome back!</string>
                                             </mask>
                                         </variation>
                                     </button>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="rH4-m7-wV7">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="rH4-m7-wV7" customClass="MDCOutlinedTextField">
                                         <rect key="frame" x="40" y="267" width="348" height="44"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="44" id="Hb6-0t-xDK"/>
@@ -1142,6 +1142,14 @@ Fill in to register!</string>
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="dummyPhoneTextField" destination="sIX-qU-qHZ" id="krE-VD-3iH"/>
+                        <outlet property="passwordTextField" destination="Taq-iM-hwh" id="WHI-HD-aOi"/>
+                        <outlet property="phoneTextField" destination="Rxh-e8-QCj" id="YRG-nL-SlH"/>
+                        <outlet property="registerButton" destination="7An-Yd-ynD" id="0aw-hS-Zw0"/>
+                        <outlet property="retypePasswordTextField" destination="rH4-m7-wV7" id="hoU-bP-Dli"/>
+                        <outlet property="usernameTextField" destination="LRd-qh-E0c" id="H3W-NB-BGt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DYi-fw-fEa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
