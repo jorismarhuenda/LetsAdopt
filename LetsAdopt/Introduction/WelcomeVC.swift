@@ -21,7 +21,15 @@ class WelcomeVC: UIViewController {
     }
     
     @IBAction func registerAct (_ sender: Any) {
-      
+        let welcomeVC = self.presentingViewController
+        
+        self.dismiss(animated: true, completion: {
+            let storyboard = UIStoryboard(name: "Auth", bundle: nil)
+            let dest = storyboard.instantiateViewController(withIdentifier: "RegisterViewController") as! RegisterViewController
+            
+            dest.modalPresentationStyle = .fullScreen
+            welcomeVC?.present(dest, animated: true, completion: nil)
+        })
     }
     
     @IBAction func loginAct (_ sender: Any) {
