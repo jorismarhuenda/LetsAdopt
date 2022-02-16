@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		C61A7050DE2AC871BEE7D56A /* Pods_LetsAdopt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 351EA44B719656BBE0681A9A /* Pods_LetsAdopt.framework */; };
 		EC18D82627BD068800902639 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC18D82527BD068800902639 /* Model.swift */; };
-		EC18D82827BD081F00902639 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EC18D82727BD081F00902639 /* GoogleService-Info.plist */; };
 		EC18D82A27BD15E200902639 /* Config.plist in Resources */ = {isa = PBXBuildFile; fileRef = EC18D82927BD15E200902639 /* Config.plist */; };
 		EC18D82C27BD1C4200902639 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC18D82B27BD1C4200902639 /* RegisterViewController.swift */; };
 		EC18D82F27BD1F9D00902639 /* HalfRoundedUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC18D82E27BD1F9D00902639 /* HalfRoundedUIView.swift */; };
@@ -36,6 +35,7 @@
 		ECD21E1827B93FB20022E26B /* LandingPage1VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD21E1727B93FB20022E26B /* LandingPage1VC.swift */; };
 		ECD21E1A27B93FF70022E26B /* LandingPage2VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD21E1927B93FF70022E26B /* LandingPage2VC.swift */; };
 		ECD21E1C27B940200022E26B /* WelcomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD21E1B27B940200022E26B /* WelcomeVC.swift */; };
+		ECE9666327BD6932008251D0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = ECE9666227BD6932008251D0 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,7 +60,6 @@
 		6574BF99CDEE61EBE5C93C5B /* Pods-LetsAdopt.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LetsAdopt.release.xcconfig"; path = "Target Support Files/Pods-LetsAdopt/Pods-LetsAdopt.release.xcconfig"; sourceTree = "<group>"; };
 		7ECD9D1BDD1D5351760BC1A9 /* Pods-LetsAdopt.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LetsAdopt.debug.xcconfig"; path = "Target Support Files/Pods-LetsAdopt/Pods-LetsAdopt.debug.xcconfig"; sourceTree = "<group>"; };
 		EC18D82527BD068800902639 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
-		EC18D82727BD081F00902639 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		EC18D82927BD15E200902639 /* Config.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Config.plist; sourceTree = "<group>"; };
 		EC18D82B27BD1C4200902639 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		EC18D82E27BD1F9D00902639 /* HalfRoundedUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HalfRoundedUIView.swift; sourceTree = "<group>"; };
@@ -91,6 +90,7 @@
 		ECD21E1727B93FB20022E26B /* LandingPage1VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingPage1VC.swift; sourceTree = "<group>"; };
 		ECD21E1927B93FF70022E26B /* LandingPage2VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingPage2VC.swift; sourceTree = "<group>"; };
 		ECD21E1B27B940200022E26B /* WelcomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeVC.swift; sourceTree = "<group>"; };
+		ECE9666227BD6932008251D0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,6 +173,7 @@
 		ECA3654F27A73293008A9C46 /* LetsAdopt */ = {
 			isa = PBXGroup;
 			children = (
+				ECE9666227BD6932008251D0 /* GoogleService-Info.plist */,
 				EC18D82D27BD1F7700902639 /* Core */,
 				EC18D7A127BBF4B100902639 /* Authentification */,
 				ECD21E1127B1434F0022E26B /* Main */,
@@ -186,7 +187,6 @@
 				ECA3656127A73297008A9C46 /* Info.plist */,
 				ECA3655927A73293008A9C46 /* LetsAdopt.xcdatamodeld */,
 				EC18D82927BD15E200902639 /* Config.plist */,
-				EC18D82727BD081F00902639 /* GoogleService-Info.plist */,
 			);
 			path = LetsAdopt;
 			sourceTree = "<group>";
@@ -367,8 +367,8 @@
 				ECA3656027A73297008A9C46 /* LaunchScreen.storyboard in Resources */,
 				ECA3655D27A73297008A9C46 /* Assets.xcassets in Resources */,
 				ECA3655827A73293008A9C46 /* Main.storyboard in Resources */,
-				EC18D82827BD081F00902639 /* GoogleService-Info.plist in Resources */,
 				EC18D82A27BD15E200902639 /* Config.plist in Resources */,
+				ECE9666327BD6932008251D0 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
