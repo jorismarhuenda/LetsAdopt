@@ -14,6 +14,7 @@
 		EC18D82C27BD1C4200902639 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC18D82B27BD1C4200902639 /* RegisterViewController.swift */; };
 		EC18D82F27BD1F9D00902639 /* HalfRoundedUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC18D82E27BD1F9D00902639 /* HalfRoundedUIView.swift */; };
 		EC18D83127BD401600902639 /* VerifyAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC18D83027BD401600902639 /* VerifyAPI.swift */; };
+		EC18D83327BD416300902639 /* VerifyAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC18D83227BD416300902639 /* VerifyAccountViewController.swift */; };
 		ECA3655127A73293008A9C46 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA3655027A73293008A9C46 /* AppDelegate.swift */; };
 		ECA3655327A73293008A9C46 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA3655227A73293008A9C46 /* SceneDelegate.swift */; };
 		ECA3655527A73293008A9C46 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA3655427A73293008A9C46 /* ViewController.swift */; };
@@ -63,6 +64,7 @@
 		EC18D82B27BD1C4200902639 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		EC18D82E27BD1F9D00902639 /* HalfRoundedUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HalfRoundedUIView.swift; sourceTree = "<group>"; };
 		EC18D83027BD401600902639 /* VerifyAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifyAPI.swift; sourceTree = "<group>"; };
+		EC18D83227BD416300902639 /* VerifyAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifyAccountViewController.swift; sourceTree = "<group>"; };
 		ECA3654D27A73293008A9C46 /* LetsAdopt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LetsAdopt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECA3655027A73293008A9C46 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ECA3655227A73293008A9C46 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -130,6 +132,7 @@
 				EC18D82527BD068800902639 /* Model.swift */,
 				EC18D82B27BD1C4200902639 /* RegisterViewController.swift */,
 				EC18D83027BD401600902639 /* VerifyAPI.swift */,
+				EC18D83227BD416300902639 /* VerifyAccountViewController.swift */,
 			);
 			path = Authentification;
 			sourceTree = "<group>";
@@ -429,6 +432,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC18D83327BD416300902639 /* VerifyAccountViewController.swift in Sources */,
 				ECD21E1027B141F30022E26B /* IntroductionDelegate.swift in Sources */,
 				ECD21E1C27B940200022E26B /* WelcomeVC.swift in Sources */,
 				ECBB6ADD27BBD0960029915F /* PetTypePickerViewDelegate.swift in Sources */,

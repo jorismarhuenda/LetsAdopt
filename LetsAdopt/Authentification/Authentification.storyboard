@@ -2100,10 +2100,10 @@ recover password</string>
             </objects>
             <point key="canvasLocation" x="-246.37681159420291" y="746.65178571428567"/>
         </scene>
-        <!--View Controller-->
+        <!--Verify Account View Controller-->
         <scene sceneID="Zoq-CH-ung">
             <objects>
-                <viewController id="MhH-5K-bfq" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="VerifyAccountViewController" id="MhH-5K-bfq" customClass="VerifyAccountViewController" customModule="LetsAdopt" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="NLg-JR-CTx">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -2123,10 +2123,10 @@ your account</string>
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X7J-kJ-Kh8">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X7J-kJ-Kh8" customClass="HalfRoundedUIView" customModule="LetsAdopt" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="246" width="428" height="680"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YzP-0U-V9r">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YzP-0U-V9r" customClass="MDCButton">
                                         <rect key="frame" x="69" y="228" width="290" height="44"/>
                                         <color key="backgroundColor" name="AppRedColor"/>
                                         <constraints>
@@ -2159,6 +2159,9 @@ your account</string>
                                                 <include reference="zQ4-Ry-d3z"/>
                                             </mask>
                                         </variation>
+                                        <connections>
+                                            <action selector="verifyAct:" destination="MhH-5K-bfq" eventType="touchUpInside" id="bh1-X5-6Of"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OTP code is sent to your phone number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ftx-Zg-GOE">
                                         <rect key="frame" x="272.5" y="40" width="351" height="23"/>
@@ -2236,6 +2239,9 @@ your account</string>
                                         <state key="normal" title="BACK">
                                             <color key="titleColor" name="AppRedColor"/>
                                         </state>
+                                        <connections>
+                                            <action selector="backAct:" destination="MhH-5K-bfq" eventType="touchUpInside" id="Fem-5g-zey"/>
+                                        </connections>
                                     </button>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="lKW-HE-z6b" customClass="MDCOutlinedTextField">
                                         <rect key="frame" x="278" y="90" width="340" height="44"/>
@@ -2306,6 +2312,9 @@ your account</string>
                                                 </fragment>
                                             </attributedString>
                                         </state>
+                                        <connections>
+                                            <action selector="resendAct:" destination="MhH-5K-bfq" eventType="touchUpInside" id="79o-IA-0ef"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -2596,6 +2605,12 @@ your account</string>
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="backButton" destination="95A-rh-LWR" id="APB-eT-Jdi"/>
+                        <outlet property="instructionLabel" destination="yE4-6H-FFc" id="ICF-LA-Cze"/>
+                        <outlet property="otpTextFieldView" destination="inq-su-buT" id="dF0-91-9UY"/>
+                        <outlet property="verifyButton" destination="YzP-0U-V9r" id="31v-o7-xkR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Df1-6U-ubB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -3108,6 +3123,9 @@ Enter your new password to login
     <designables>
         <designable name="7An-Yd-ynD">
             <size key="intrinsicContentSize" width="83" height="32"/>
+        </designable>
+        <designable name="YzP-0U-V9r">
+            <size key="intrinsicContentSize" width="58" height="32"/>
         </designable>
     </designables>
     <resources>
