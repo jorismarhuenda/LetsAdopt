@@ -3,6 +3,6 @@
 <plist version="1.0">
 <dict>
 	<key>serverURL</key>
-	<string></string>
+	<string>https://lets-adopt.herokuapp.com</string>
 </dict>
 </plist>
