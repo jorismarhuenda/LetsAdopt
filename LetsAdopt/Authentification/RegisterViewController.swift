@@ -70,6 +70,47 @@ class RegisterViewController: UIViewController {
             self?.phoneTextField.setFlag(countryCode: country.code)
         }
     }
+    
+    @IBAction func dummyPhoneBeginEdit(_ sender: Any) {
+        dummyPhoneTextField.text = " "
+        dummyPhoneTextField.setOutlineColor(UIColor(named: "AccentColor")!, for: .normal)
+        dummyPhoneTextField.setFloatingLabelColor(UIColor(named: "AccentColor")!, for: .normal)
+    }
+    
+    @IBAction func dummyPhoneEditEnd(_ sender: Any) {
+        if phoneTextField.text! == "" {
+            dummyPhoneTextField.text = ""
+            dummyPhoneTextField.setOutlineColor(UIColor(named: "AppSecondaryColor")!, for: .normal)
+
+            dummyPhoneTextField.setNormalLabelColor(UIColor(named: "AppGrayColor")!, for: .normal)
+            dummyPhoneTextField.setFloatingLabelColor(UIColor(named: "AppSecondaryColor")!, for: .normal)
+        }
+    }
+    
+    @IBAction func registerAct(_ sender: Any) {
+            
+    }
+    
+    @IBAction func loginAct(_ sender: Any) {
+        
+    }
+    
+    func isSame(_ password: String, _ retype: String) -> Bool {
+        return password == retype
+    }
+
+    func isValidPassword(testStr:String?) -> Bool {
+        guard testStr != nil else { return false }
+     
+        // at least one uppercase,
+        // at least one digit
+        // at least one lowercase
+        // 8 characters total
+        let passwordTest = NSPredicate(format: "SELF MATCHES %@", "(?=.*[A-Z])(?=.*[0-9])(?=.*[a-z]).{8,}")
+        return passwordTest.evaluate(with: testStr)
+    }
+    
+    
 }
 
 extension RegisterViewController: FPNTextFieldDelegate {

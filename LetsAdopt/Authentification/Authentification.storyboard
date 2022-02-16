@@ -3095,6 +3095,11 @@ Enter your new password to login
             <point key="canvasLocation" x="1286.9565217391305" y="746.65178571428567"/>
         </scene>
     </scenes>
+    <designables>
+        <designable name="7An-Yd-ynD">
+            <size key="intrinsicContentSize" width="83" height="32"/>
+        </designable>
+    </designables>
     <resources>
         <image name="corgi-hello" width="144" height="117"/>
         <image name="fb-button" width="133" height="43"/>
