@@ -2,6 +2,8 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>GOOGLE_APP_ID</key>
+	<string></string>
 	<key>STORAGE_BUCKET</key>
 	<string>letsadopt.appspot.com</string>
 	<key>IS_SIGNIN_ENABLED</key>

@@ -29,6 +29,7 @@
 		ECA3658627A7352D008A9C46 /* Authentification.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECA3658527A7352D008A9C46 /* Authentification.storyboard */; };
 		ECBB6ADD27BBD0960029915F /* PetTypePickerViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBB6ADC27BBD0960029915F /* PetTypePickerViewDelegate.swift */; };
 		ECBB6ADF27BBD0CF0029915F /* SortPickerViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBB6ADE27BBD0CF0029915F /* SortPickerViewDelegate.swift */; };
+		ECCAB31E27BD59A900FC8E45 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCAB31D27BD59A900FC8E45 /* CardView.swift */; };
 		ECD21E1027B141F30022E26B /* IntroductionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD21E0F27B141F30022E26B /* IntroductionDelegate.swift */; };
 		ECD21E1427B143700022E26B /* GenderPickerViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD21E1327B143700022E26B /* GenderPickerViewDelegate.swift */; };
 		ECD21E1627B93CFD0022E26B /* IntroductionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD21E1527B93CFD0022E26B /* IntroductionViewController.swift */; };
@@ -83,6 +84,7 @@
 		ECA3658527A7352D008A9C46 /* Authentification.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Authentification.storyboard; sourceTree = "<group>"; };
 		ECBB6ADC27BBD0960029915F /* PetTypePickerViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetTypePickerViewDelegate.swift; sourceTree = "<group>"; };
 		ECBB6ADE27BBD0CF0029915F /* SortPickerViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortPickerViewDelegate.swift; sourceTree = "<group>"; };
+		ECCAB31D27BD59A900FC8E45 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		ECD21E0F27B141F30022E26B /* IntroductionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroductionDelegate.swift; sourceTree = "<group>"; };
 		ECD21E1327B143700022E26B /* GenderPickerViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenderPickerViewDelegate.swift; sourceTree = "<group>"; };
 		ECD21E1527B93CFD0022E26B /* IntroductionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroductionViewController.swift; sourceTree = "<group>"; };
@@ -141,6 +143,7 @@
 			isa = PBXGroup;
 			children = (
 				EC18D82E27BD1F9D00902639 /* HalfRoundedUIView.swift */,
+				ECCAB31D27BD59A900FC8E45 /* CardView.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -442,6 +445,7 @@
 				EC18D82627BD068800902639 /* Model.swift in Sources */,
 				ECA3655127A73293008A9C46 /* AppDelegate.swift in Sources */,
 				EC18D82F27BD1F9D00902639 /* HalfRoundedUIView.swift in Sources */,
+				ECCAB31E27BD59A900FC8E45 /* CardView.swift in Sources */,
 				EC18D83127BD401600902639 /* VerifyAPI.swift in Sources */,
 				ECBB6ADF27BBD0CF0029915F /* SortPickerViewDelegate.swift in Sources */,
 				EC18D82C27BD1C4200902639 /* RegisterViewController.swift in Sources */,
