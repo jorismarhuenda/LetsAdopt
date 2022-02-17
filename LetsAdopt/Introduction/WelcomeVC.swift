@@ -24,7 +24,7 @@ class WelcomeVC: UIViewController {
         let welcomeVC = self.presentingViewController
         
         self.dismiss(animated: true, completion: {
-            let storyboard = UIStoryboard(name: "Auth", bundle: nil)
+            let storyboard = UIStoryboard(name: "Authentification", bundle: nil)
             let dest = storyboard.instantiateViewController(withIdentifier: "RegisterViewController") as! RegisterViewController
             
             dest.modalPresentationStyle = .fullScreen

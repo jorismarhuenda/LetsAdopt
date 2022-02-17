@@ -26,6 +26,7 @@
 		ECA3657727A73298008A9C46 /* LetsAdoptUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA3657627A73298008A9C46 /* LetsAdoptUITestsLaunchTests.swift */; };
 		ECA3658427A73463008A9C46 /* Introduction.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECA3658327A73463008A9C46 /* Introduction.storyboard */; };
 		ECA3658627A7352D008A9C46 /* Authentification.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECA3658527A7352D008A9C46 /* Authentification.storyboard */; };
+		ECAD872127BE60700046FB20 /* FillInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAD872027BE60700046FB20 /* FillInfoViewController.swift */; };
 		ECBB6ADD27BBD0960029915F /* PetTypePickerViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBB6ADC27BBD0960029915F /* PetTypePickerViewDelegate.swift */; };
 		ECBB6ADF27BBD0CF0029915F /* SortPickerViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBB6ADE27BBD0CF0029915F /* SortPickerViewDelegate.swift */; };
 		ECCAB31E27BD59A900FC8E45 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCAB31D27BD59A900FC8E45 /* CardView.swift */; };
@@ -81,6 +82,7 @@
 		ECA3657627A73298008A9C46 /* LetsAdoptUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetsAdoptUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		ECA3658327A73463008A9C46 /* Introduction.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Introduction.storyboard; sourceTree = "<group>"; };
 		ECA3658527A7352D008A9C46 /* Authentification.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Authentification.storyboard; sourceTree = "<group>"; };
+		ECAD872027BE60700046FB20 /* FillInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FillInfoViewController.swift; sourceTree = "<group>"; };
 		ECBB6ADC27BBD0960029915F /* PetTypePickerViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetTypePickerViewDelegate.swift; sourceTree = "<group>"; };
 		ECBB6ADE27BBD0CF0029915F /* SortPickerViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortPickerViewDelegate.swift; sourceTree = "<group>"; };
 		ECCAB31D27BD59A900FC8E45 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
@@ -135,6 +137,7 @@
 				EC18D82B27BD1C4200902639 /* RegisterViewController.swift */,
 				EC18D83027BD401600902639 /* VerifyAPI.swift */,
 				EC18D83227BD416300902639 /* VerifyAccountViewController.swift */,
+				ECAD872027BE60700046FB20 /* FillInfoViewController.swift */,
 			);
 			path = Authentification;
 			sourceTree = "<group>";
@@ -449,6 +452,7 @@
 				EC18D83127BD401600902639 /* VerifyAPI.swift in Sources */,
 				ECBB6ADF27BBD0CF0029915F /* SortPickerViewDelegate.swift in Sources */,
 				EC18D82C27BD1C4200902639 /* RegisterViewController.swift in Sources */,
+				ECAD872127BE60700046FB20 /* FillInfoViewController.swift in Sources */,
 				ECA3655B27A73293008A9C46 /* LetsAdopt.xcdatamodeld in Sources */,
 				ECD21E1A27B93FF70022E26B /* LandingPage2VC.swift in Sources */,
 				ECA3655327A73293008A9C46 /* SceneDelegate.swift in Sources */,

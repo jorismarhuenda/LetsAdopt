@@ -1165,18 +1165,18 @@ Fill in to register!</string>
             </objects>
             <point key="canvasLocation" x="524.63768115942037" y="77.678571428571431"/>
         </scene>
-        <!--View Controller-->
+        <!--Fill Info View Controller-->
         <scene sceneID="oVe-5H-iog">
             <objects>
-                <viewController id="aK8-Zo-2kL" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FillInfoViewController" id="aK8-Zo-2kL" customClass="FillInfoViewController" customModule="LetsAdopt" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Grs-70-Dmv">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o3R-WR-UgM">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o3R-WR-UgM" customClass="HalfRoundedUIView" customModule="LetsAdopt" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="246" width="428" height="680"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="RBi-w7-1un">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="RBi-w7-1un" customClass="MDCOutlinedTextField">
                                         <rect key="frame" x="40" y="113" width="348" height="44"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="44" id="M0w-sz-yzj"/>
@@ -1206,7 +1206,7 @@ Fill in to register!</string>
                                             </mask>
                                         </variation>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="iTz-Zk-a9s">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="iTz-Zk-a9s" customClass="MDCOutlinedTextField">
                                         <rect key="frame" x="40" y="187" width="348" height="44"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="44" id="Xg0-Bh-htF"/>
@@ -1224,7 +1224,7 @@ Fill in to register!</string>
                                             </mask>
                                         </variation>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Vs6-bq-vRB">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Vs6-bq-vRB" customClass="MDCOutlinedTextField">
                                         <rect key="frame" x="40" y="261" width="180" height="44"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="180" id="Veg-2a-74b"/>
@@ -1252,7 +1252,7 @@ Fill in to register!</string>
                                             </mask>
                                         </variation>
                                     </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XhF-Ge-gz3">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XhF-Ge-gz3" customClass="MDCButton">
                                         <rect key="frame" x="69" y="415" width="290" height="44"/>
                                         <color key="backgroundColor" name="AppRedColor"/>
                                         <constraints>
@@ -1286,7 +1286,7 @@ Fill in to register!</string>
                                             </mask>
                                         </variation>
                                     </button>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="qmo-ke-vWi">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="qmo-ke-vWi" customClass="MDCOutlinedTextField">
                                         <rect key="frame" x="40" y="335" width="348" height="44"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="44" id="rAW-Bq-MCZ"/>
@@ -1304,7 +1304,7 @@ Fill in to register!</string>
                                             </mask>
                                         </variation>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="HGm-7H-DdS">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="HGm-7H-DdS" customClass="MDCOutlinedTextField">
                                         <rect key="frame" x="250" y="261" width="138" height="44"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="120" id="4Yx-4L-6n3"/>
@@ -1607,6 +1607,16 @@ about your self!</string>
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="addressTextField" destination="qmo-ke-vWi" id="4yi-VW-IQB"/>
+                        <outlet property="avtPickerButton" destination="Asb-kx-bIf" id="bqz-Kh-GSY"/>
+                        <outlet property="backButton" destination="qRF-2d-FCM" id="yDQ-6d-hV2"/>
+                        <outlet property="dobTextField" destination="Vs6-bq-vRB" id="Ofb-a5-NJR"/>
+                        <outlet property="emailTextField" destination="iTz-Zk-a9s" id="xo4-JF-Ykb"/>
+                        <outlet property="finishButton" destination="XhF-Ge-gz3" id="BgB-yR-3Mf"/>
+                        <outlet property="genderTextField" destination="HGm-7H-DdS" id="aUn-0x-gab"/>
+                        <outlet property="userFullNameTextField" destination="RBi-w7-1un" id="2hn-a1-WfH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="P6O-fR-Oiz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
