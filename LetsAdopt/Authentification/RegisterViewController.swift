@@ -88,7 +88,28 @@ class RegisterViewController: UIViewController {
     }
     
     @IBAction func registerAct(_ sender: Any) {
-            
+        // Do some thing before go to others screen
+        checkCorrectForm()
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(4)) { [self] in
+            if (self.isCorrect) {
+                let phone = self.phoneTextField.getFormattedPhoneNumber(format: .E164)!
+                let username = self.usernameTextField.text!
+                let password = self.passwordTextField.text!
+                
+                
+                    let dest = self.storyboard?.instantiateViewController(withIdentifier: "FillInfoViewController") as! FillInfoViewController
+                    
+                    dest.modalPresentationStyle = .fullScreen
+                    
+                    dest.username = username
+                    dest.password = password
+                    dest.phone = phone
+                    
+                    self.present(dest, animated: true, completion: nil)
+               
+            }
+        }
     }
     
     @IBAction func loginAct(_ sender: Any) {
@@ -110,6 +131,201 @@ class RegisterViewController: UIViewController {
         return passwordTest.evaluate(with: testStr)
     }
     
+    func checkCorrectForm() {
+        var result = false
+        var alertMessage = ""
+        
+        if (phoneTextField.text! == "") {
+            alertMessage = "Phone must be filled"
+            
+            let appearance = SCLAlertView.SCLAppearance(
+                kButtonFont: UIFont(name: "HelveticaNeue", size: 17)!,
+                showCloseButton: false, showCircularIcon: false
+            )
+            
+            let alertView = SCLAlertView(appearance: appearance)
+            
+            alertView.addButton("CANCEL", backgroundColor: UIColor(named: "AppRedColor"), textColor: .white, showTimeout: .none, action: {
+                alertView.dismiss(animated: true, completion: nil)
+            })
+            
+            alertView.showWarning("Warning", subTitle: alertMessage)
+            
+            return;
+        }
+        
+        if (usernameTextField.text! == "") {
+            alertMessage = "Username must be filled"
+            
+            let appearance = SCLAlertView.SCLAppearance(
+                kButtonFont: UIFont(name: "HelveticaNeue", size: 17)!,
+                showCloseButton: false, showCircularIcon: false
+            )
+            
+            let alertView = SCLAlertView(appearance: appearance)
+            
+            alertView.addButton("CANCEL", backgroundColor: UIColor(named: "AppRedColor"), textColor: .white, showTimeout: .none, action: {
+                alertView.dismiss(animated: true, completion: nil)
+            })
+            
+            alertView.showWarning("Warning", subTitle: alertMessage)
+            
+            return;
+        }
+        
+        if (passwordTextField.text! == "") {
+            alertMessage = "Password must be filled"
+            
+            let appearance = SCLAlertView.SCLAppearance(
+                kButtonFont: UIFont(name: "HelveticaNeue", size: 17)!,
+                showCloseButton: false, showCircularIcon: false
+            )
+            
+            let alertView = SCLAlertView(appearance: appearance)
+            
+            alertView.addButton("CANCEL", backgroundColor: UIColor(named: "AppRedColor"), textColor: .white, showTimeout: .none, action: {
+                alertView.dismiss(animated: true, completion: nil)
+            })
+            
+            alertView.showWarning("Warning", subTitle: alertMessage)
+            
+            return
+        }
+        
+        if (retypePasswordTextField.text! == "") {
+            alertMessage = "Retype password must be filled"
+            
+            let appearance = SCLAlertView.SCLAppearance(
+                kButtonFont: UIFont(name: "HelveticaNeue", size: 17)!,
+                showCloseButton: false, showCircularIcon: false
+            )
+            
+            let alertView = SCLAlertView(appearance: appearance)
+            
+            alertView.addButton("CANCEL", backgroundColor: UIColor(named: "AppRedColor"), textColor: .white, showTimeout: .none, action: {
+                alertView.dismiss(animated: true, completion: nil)
+            })
+            
+            alertView.showWarning("Warning", subTitle: alertMessage)
+            
+            return;
+        }
+    
+        ProgressHUD.show()
+        db.collection("users").whereField("username", isEqualTo: self.usernameTextField.text!)
+            .getDocuments{ (querySnapshot, error) in
+                if let error = error {
+                    print(error)
+                } else {
+                    if querySnapshot!.documents.count >= 1 {
+                        alertMessage = "username already exists"
+                        
+                        let appearance = SCLAlertView.SCLAppearance(
+                            kButtonFont: UIFont(name: "HelveticaNeue", size: 17)!,
+                            showCloseButton: false, showCircularIcon: false
+                        )
+                        
+                        let alertView = SCLAlertView(appearance: appearance)
+                        
+                        alertView.addButton("CANCEL", backgroundColor: UIColor(named: "AppRedColor"), textColor: .white, showTimeout: .none, action: {
+                            alertView.dismiss(animated: true, completion: nil)
+                        })
+                        
+                        alertView.showWarning("Warning", subTitle: alertMessage)
+                        
+                        result = false;
+                        
+                    } else {
+                        db.collection("users").whereField("phone", isEqualTo: self.phoneNumber)
+                            .getDocuments{ (querySnapshot, error) in
+                                if let error = error {
+                                    print(error)
+
+                                } else {
+                               
+                                    if querySnapshot!.documents.count >= 1 {
+                                        alertMessage = "phone number already exists"
+                                        
+                                        let appearance = SCLAlertView.SCLAppearance(
+                                            kButtonFont: UIFont(name: "HelveticaNeue", size: 17)!,
+                                            showCloseButton: false, showCircularIcon: false
+                                        )
+                                        
+                                        let alertView = SCLAlertView(appearance: appearance)
+                                        
+                                        alertView.addButton("CANCEL", backgroundColor: UIColor(named: "AppRedColor"), textColor: .white, showTimeout: .none, action: {
+                                            alertView.dismiss(animated: true, completion: nil)
+                                        })
+                                        
+                                        alertView.showWarning("Warning", subTitle: alertMessage)
+                                        result = false
+
+                                    } else {
+                                        print("1")
+                                        if (!self.isValidPassword(testStr: self.passwordTextField.text!)) {
+                                            //alert mat khau yeu
+                                            print("2")
+                                            alertMessage = "Weak password. Password must include at least one uppercase, one lowercase, one digit and 8 characters total "
+                                            
+                                            let appearance = SCLAlertView.SCLAppearance(
+                                                kButtonFont: UIFont(name: "HelveticaNeue", size: 17)!,
+                                                showCloseButton: false, showCircularIcon: false
+                                            )
+                                            
+                                            let alertView = SCLAlertView(appearance: appearance)
+                                            
+                                            alertView.addButton("CANCEL", backgroundColor: UIColor(named: "AppRedColor"), textColor: .white, showTimeout: .none, action: {
+                                                alertView.dismiss(animated: true, completion: nil)
+                                            })
+                                            
+                                            alertView.showWarning("Warning", subTitle: alertMessage)
+                                            
+                                            result = false
+
+                                        } else {
+                                            print("3")
+                                            if (!self.isSame(self.passwordTextField.text!, self.retypePasswordTextField.text!)) {
+                                                print("4")
+                                                alertMessage = "password and retype must be same"
+                                                
+                                                let appearance = SCLAlertView.SCLAppearance(
+                                                    kButtonFont: UIFont(name: "HelveticaNeue", size: 17)!,
+                                                    showCloseButton: false, showCircularIcon: false
+                                                )
+                                                
+                                                let alertView = SCLAlertView(appearance: appearance)
+                                                
+                                                alertView.addButton("CANCEL", backgroundColor: UIColor(named: "AppRedColor"), textColor: .white, showTimeout: .none, action: {
+                                                    alertView.dismiss(animated: true, completion: nil)
+                                                })
+                                                
+                                                alertView.showWarning("Warning", subTitle: alertMessage)
+                                                
+                                                result = false
+                       
+                                            } else {
+                                                result = true
+
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+        }
+    
+        DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(4), execute :  {
+            ProgressHUD.dismiss()
+            self.isCorrect = result;
+        })
+        
+    
+    }
+    
+    func returnValue(value : Bool) -> Bool {
+        return value
+    }
     
 }
 
