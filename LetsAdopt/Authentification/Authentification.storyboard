@@ -1630,7 +1630,7 @@ about your self!</string>
                         <outlet property="emailTextField" destination="iTz-Zk-a9s" id="xo4-JF-Ykb"/>
                         <outlet property="finishButton" destination="XhF-Ge-gz3" id="BgB-yR-3Mf"/>
                         <outlet property="genderTextField" destination="HGm-7H-DdS" id="aUn-0x-gab"/>
-                        <outlet property="userFullNameTextField" destination="RBi-w7-1un" id="2hn-a1-WfH"/>
+                        <outlet property="userfullNameTextField" destination="RBi-w7-1un" id="Veb-xE-Mkf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="P6O-fR-Oiz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
