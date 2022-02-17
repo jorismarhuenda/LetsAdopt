@@ -1251,6 +1251,9 @@ Fill in to register!</string>
                                                 <include reference="z2o-3O-dnc"/>
                                             </mask>
                                         </variation>
+                                        <connections>
+                                            <action selector="datePickerAct:" destination="aK8-Zo-2kL" eventType="editingDidEnd" id="sSZ-12-Sa3"/>
+                                        </connections>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XhF-Ge-gz3" customClass="MDCButton">
                                         <rect key="frame" x="69" y="415" width="290" height="44"/>
@@ -1285,6 +1288,9 @@ Fill in to register!</string>
                                                 <include reference="yKi-1S-hOX"/>
                                             </mask>
                                         </variation>
+                                        <connections>
+                                            <action selector="finishFillInfo:" destination="aK8-Zo-2kL" eventType="touchUpInside" id="m80-XC-8MN"/>
+                                        </connections>
                                     </button>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="qmo-ke-vWi" customClass="MDCOutlinedTextField">
                                         <rect key="frame" x="40" y="335" width="348" height="44"/>
@@ -1328,6 +1334,9 @@ Fill in to register!</string>
                                                 <include reference="lnK-tj-6pn"/>
                                             </mask>
                                         </variation>
+                                        <connections>
+                                            <action selector="genderPickerAct:" destination="aK8-Zo-2kL" eventType="editingDidEnd" id="rfV-fv-UOY"/>
+                                        </connections>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qRF-2d-FCM">
                                         <rect key="frame" x="69" y="479" width="290" height="44"/>
@@ -1335,6 +1344,9 @@ Fill in to register!</string>
                                         <state key="normal" title="BACK">
                                             <color key="titleColor" name="AppRedColor"/>
                                         </state>
+                                        <connections>
+                                            <action selector="backAct:" destination="aK8-Zo-2kL" eventType="touchUpInside" id="LxX-mK-i0O"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -1544,6 +1556,9 @@ about your self!</string>
                                         <include reference="fH8-WX-h75"/>
                                     </mask>
                                 </variation>
+                                <connections>
+                                    <action selector="avtPickerAct:" destination="aK8-Zo-2kL" eventType="touchUpInside" id="ttl-hu-rsj"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="88n-mm-jJP"/>
