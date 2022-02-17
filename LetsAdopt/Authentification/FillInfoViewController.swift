@@ -473,7 +473,7 @@ class FillInfoViewController: UIViewController {
                         Core.shared.setCurrentUserFullName(fullName)
                         
                     ChatDatabaseManager.shared.insertUser(with: ChatAppUser(fullName: fullName, emailAddress: email), completion: {
-                    success in
+                        success in
                         if (success){
                             print("done insert realtime")
                         } else {
@@ -515,6 +515,7 @@ class FillInfoViewController: UIViewController {
         genderTextField.text = genders[genderPickerView.selectedRow(inComponent: 0)]
         bottomPopUpView.dismiss(animated: true, completion: nil)
     }
+    
     @IBAction func backAct(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
     }
