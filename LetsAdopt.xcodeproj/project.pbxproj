@@ -29,6 +29,7 @@
 		ECAD872127BE60700046FB20 /* FillInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAD872027BE60700046FB20 /* FillInfoViewController.swift */; };
 		ECAD872327BE6A860046FB20 /* Core.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAD872227BE6A850046FB20 /* Core.swift */; };
 		ECAD872727BE6C6E0046FB20 /* ChatStorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAD872627BE6C6E0046FB20 /* ChatStorageManager.swift */; };
+		ECAD872927BE6D130046FB20 /* ChatDataBaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAD872827BE6D130046FB20 /* ChatDataBaseManager.swift */; };
 		ECBB6ADD27BBD0960029915F /* PetTypePickerViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBB6ADC27BBD0960029915F /* PetTypePickerViewDelegate.swift */; };
 		ECBB6ADF27BBD0CF0029915F /* SortPickerViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBB6ADE27BBD0CF0029915F /* SortPickerViewDelegate.swift */; };
 		ECCAB31E27BD59A900FC8E45 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCAB31D27BD59A900FC8E45 /* CardView.swift */; };
@@ -87,6 +88,7 @@
 		ECAD872027BE60700046FB20 /* FillInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FillInfoViewController.swift; sourceTree = "<group>"; };
 		ECAD872227BE6A850046FB20 /* Core.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core.swift; sourceTree = "<group>"; };
 		ECAD872627BE6C6E0046FB20 /* ChatStorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatStorageManager.swift; sourceTree = "<group>"; };
+		ECAD872827BE6D130046FB20 /* ChatDataBaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatDataBaseManager.swift; sourceTree = "<group>"; };
 		ECBB6ADC27BBD0960029915F /* PetTypePickerViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetTypePickerViewDelegate.swift; sourceTree = "<group>"; };
 		ECBB6ADE27BBD0CF0029915F /* SortPickerViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortPickerViewDelegate.swift; sourceTree = "<group>"; };
 		ECCAB31D27BD59A900FC8E45 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
@@ -227,6 +229,7 @@
 			isa = PBXGroup;
 			children = (
 				ECAD872627BE6C6E0046FB20 /* ChatStorageManager.swift */,
+				ECAD872827BE6D130046FB20 /* ChatDataBaseManager.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -470,6 +473,7 @@
 				EC18D82627BD068800902639 /* Model.swift in Sources */,
 				ECA3655127A73293008A9C46 /* AppDelegate.swift in Sources */,
 				EC18D82F27BD1F9D00902639 /* HalfRoundedUIView.swift in Sources */,
+				ECAD872927BE6D130046FB20 /* ChatDataBaseManager.swift in Sources */,
 				ECCAB31E27BD59A900FC8E45 /* CardView.swift in Sources */,
 				ECAD872727BE6C6E0046FB20 /* ChatStorageManager.swift in Sources */,
 				EC18D83127BD401600902639 /* VerifyAPI.swift in Sources */,
