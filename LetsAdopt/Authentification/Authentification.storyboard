@@ -9,15 +9,15 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="k0S-cE-c9O">
             <objects>
-                <viewController id="ape-0N-u8k" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginViewController" id="ape-0N-u8k" customClass="LoginViewController" customModule="LetsAdopt" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rCa-2v-TKp">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UHO-vx-ffz">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UHO-vx-ffz" customClass="HalfRoundedUIView" customModule="LetsAdopt" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="246" width="428" height="680"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login with scocial media" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WBB-2h-Lx3">
@@ -29,12 +29,18 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Uh-U1-EIA">
                                         <rect key="frame" x="40" y="69" width="133" height="43"/>
                                         <state key="normal" image="fb-button"/>
+                                        <connections>
+                                            <action selector="loginWithFBAct:" destination="ape-0N-u8k" eventType="touchUpInside" id="tA6-dw-Ahb"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a3G-Jd-fHq">
                                         <rect key="frame" x="254" y="69" width="134" height="43"/>
                                         <state key="normal" image="google-button"/>
+                                        <connections>
+                                            <action selector="loginWithGGAct:" destination="ape-0N-u8k" eventType="touchUpInside" id="4aq-68-won"/>
+                                        </connections>
                                     </button>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="PPF-FA-d6R">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="PPF-FA-d6R" customClass="MDCOutlinedTextField">
                                         <rect key="frame" x="40" y="178" width="348" height="44"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="360" id="I3M-20-aTf"/>
@@ -62,7 +68,7 @@
                                             </mask>
                                         </variation>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="EFZ-bK-C9X">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="EFZ-bK-C9X" customClass="MDCOutlinedTextField">
                                         <rect key="frame" x="40" y="252" width="348" height="44"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="44" id="Vz8-3d-9uu"/>
@@ -291,6 +297,9 @@
                                                 <state key="normal" title="Forgot password?">
                                                     <color key="titleColor" name="AppSecondaryColor"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="forgotPasswordAct:" destination="ape-0N-u8k" eventType="touchUpInside" id="IMR-8t-g8L"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -351,7 +360,7 @@
                                             </mask>
                                         </variation>
                                     </view>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GMa-EN-v1f">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GMa-EN-v1f" customClass="MDCButton">
                                         <rect key="frame" x="69" y="372" width="290" height="44"/>
                                         <color key="backgroundColor" name="AppRedColor"/>
                                         <constraints>
@@ -384,6 +393,9 @@
                                                 <include reference="uun-VG-1RD"/>
                                             </mask>
                                         </variation>
+                                        <connections>
+                                            <action selector="loginManuallyAct:" destination="ape-0N-u8k" eventType="touchUpInside" id="Zkc-wT-aw8"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6Fy-vp-iEp">
                                         <rect key="frame" x="135.66666666666666" y="434" width="156.99999999999997" height="29"/>
@@ -406,6 +418,9 @@
                                                 </fragment>
                                             </attributedString>
                                         </state>
+                                        <connections>
+                                            <action selector="registerAct:" destination="ape-0N-u8k" eventType="touchUpInside" id="ye4-bs-tL3"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="For demo: Login status" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ixD-uG-jZL">
                                         <rect key="frame" x="117.66666666666669" y="528.66666666666663" width="193" height="23"/>
@@ -682,6 +697,13 @@ Welcome back!</string>
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="LoginStatusLabel" destination="ixD-uG-jZL" id="d1B-4D-7a5"/>
+                        <outlet property="loginManuallyButton" destination="GMa-EN-v1f" id="Xfb-01-jRZ"/>
+                        <outlet property="passwordTextField" destination="EFZ-bK-C9X" id="gfh-fK-U7L"/>
+                        <outlet property="rememberMeCheckbox" destination="IJj-0F-KhY" id="nAn-s1-p0x"/>
+                        <outlet property="usernameTextField" destination="PPF-FA-d6R" id="bOi-Qw-D97"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dpR-rf-xiP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -3145,14 +3167,6 @@ Enter your new password to login
             <point key="canvasLocation" x="1286.9565217391305" y="746.65178571428567"/>
         </scene>
     </scenes>
-    <designables>
-        <designable name="7An-Yd-ynD">
-            <size key="intrinsicContentSize" width="83" height="32"/>
-        </designable>
-        <designable name="YzP-0U-V9r">
-            <size key="intrinsicContentSize" width="58" height="32"/>
-        </designable>
-    </designables>
     <resources>
         <image name="corgi-hello" width="144" height="117"/>
         <image name="fb-button" width="133" height="43"/>
