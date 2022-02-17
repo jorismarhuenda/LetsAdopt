@@ -28,6 +28,7 @@
 		ECA3658627A7352D008A9C46 /* Authentification.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECA3658527A7352D008A9C46 /* Authentification.storyboard */; };
 		ECAD872127BE60700046FB20 /* FillInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAD872027BE60700046FB20 /* FillInfoViewController.swift */; };
 		ECAD872327BE6A860046FB20 /* Core.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAD872227BE6A850046FB20 /* Core.swift */; };
+		ECAD872727BE6C6E0046FB20 /* ChatStorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAD872627BE6C6E0046FB20 /* ChatStorageManager.swift */; };
 		ECBB6ADD27BBD0960029915F /* PetTypePickerViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBB6ADC27BBD0960029915F /* PetTypePickerViewDelegate.swift */; };
 		ECBB6ADF27BBD0CF0029915F /* SortPickerViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBB6ADE27BBD0CF0029915F /* SortPickerViewDelegate.swift */; };
 		ECCAB31E27BD59A900FC8E45 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCAB31D27BD59A900FC8E45 /* CardView.swift */; };
@@ -85,6 +86,7 @@
 		ECA3658527A7352D008A9C46 /* Authentification.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Authentification.storyboard; sourceTree = "<group>"; };
 		ECAD872027BE60700046FB20 /* FillInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FillInfoViewController.swift; sourceTree = "<group>"; };
 		ECAD872227BE6A850046FB20 /* Core.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core.swift; sourceTree = "<group>"; };
+		ECAD872627BE6C6E0046FB20 /* ChatStorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatStorageManager.swift; sourceTree = "<group>"; };
 		ECBB6ADC27BBD0960029915F /* PetTypePickerViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetTypePickerViewDelegate.swift; sourceTree = "<group>"; };
 		ECBB6ADE27BBD0CF0029915F /* SortPickerViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortPickerViewDelegate.swift; sourceTree = "<group>"; };
 		ECCAB31D27BD59A900FC8E45 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
@@ -214,6 +216,21 @@
 			path = LetsAdoptUITests;
 			sourceTree = "<group>";
 		};
+		ECAD872427BE6B5D0046FB20 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		ECAD872527BE6C4E0046FB20 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				ECAD872627BE6C6E0046FB20 /* ChatStorageManager.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		ECD21E0D27B141BD0022E26B /* Introduction */ = {
 			isa = PBXGroup;
 			children = (
@@ -238,6 +255,8 @@
 		ECD21E1127B1434F0022E26B /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				ECAD872527BE6C4E0046FB20 /* Resources */,
+				ECAD872427BE6B5D0046FB20 /* Model */,
 				ECD21E1227B1435A0022E26B /* Delegate */,
 			);
 			path = Main;
@@ -452,6 +471,7 @@
 				ECA3655127A73293008A9C46 /* AppDelegate.swift in Sources */,
 				EC18D82F27BD1F9D00902639 /* HalfRoundedUIView.swift in Sources */,
 				ECCAB31E27BD59A900FC8E45 /* CardView.swift in Sources */,
+				ECAD872727BE6C6E0046FB20 /* ChatStorageManager.swift in Sources */,
 				EC18D83127BD401600902639 /* VerifyAPI.swift in Sources */,
 				ECBB6ADF27BBD0CF0029915F /* SortPickerViewDelegate.swift in Sources */,
 				EC18D82C27BD1C4200902639 /* RegisterViewController.swift in Sources */,
