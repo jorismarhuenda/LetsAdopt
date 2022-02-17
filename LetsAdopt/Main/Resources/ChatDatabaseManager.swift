@@ -845,5 +845,5 @@ public func restoreEmail(safeEmail : String) -> String {
     result = result.replacingOccurrences(of: ".gmail", with: "@gmail")
     
     return result
-}
+    }
 }

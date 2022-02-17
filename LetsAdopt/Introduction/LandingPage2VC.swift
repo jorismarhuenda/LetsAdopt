@@ -9,7 +9,7 @@ import UIKit
 
 class LandingPage2VC: UIViewController {
     var delegate: IntroductionDelegate?
-    // MARK: - Outlets
+    // MARK: -Outlets
     
     override func viewDidLoad() {
         super.viewDidLoad()
