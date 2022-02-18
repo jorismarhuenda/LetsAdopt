@@ -14,6 +14,7 @@
 		EC18D82F27BD1F9D00902639 /* HalfRoundedUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC18D82E27BD1F9D00902639 /* HalfRoundedUIView.swift */; };
 		EC18D83127BD401600902639 /* VerifyAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC18D83027BD401600902639 /* VerifyAPI.swift */; };
 		EC18D83327BD416300902639 /* VerifyAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC18D83227BD416300902639 /* VerifyAccountViewController.swift */; };
+		EC1CE23527BFAD4D00ED09D7 /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1CE23427BFAD4D00ED09D7 /* ForgotPasswordViewController.swift */; };
 		ECA3655127A73293008A9C46 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA3655027A73293008A9C46 /* AppDelegate.swift */; };
 		ECA3655327A73293008A9C46 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA3655227A73293008A9C46 /* SceneDelegate.swift */; };
 		ECA3655527A73293008A9C46 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA3655427A73293008A9C46 /* ViewController.swift */; };
@@ -70,6 +71,7 @@
 		EC18D82E27BD1F9D00902639 /* HalfRoundedUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HalfRoundedUIView.swift; sourceTree = "<group>"; };
 		EC18D83027BD401600902639 /* VerifyAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifyAPI.swift; sourceTree = "<group>"; };
 		EC18D83227BD416300902639 /* VerifyAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifyAccountViewController.swift; sourceTree = "<group>"; };
+		EC1CE23427BFAD4D00ED09D7 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
 		ECA3654D27A73293008A9C46 /* LetsAdopt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LetsAdopt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECA3655027A73293008A9C46 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ECA3655227A73293008A9C46 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -147,6 +149,7 @@
 				EC18D83227BD416300902639 /* VerifyAccountViewController.swift */,
 				ECAD872027BE60700046FB20 /* FillInfoViewController.swift */,
 				ECAD87A527BE84CE0046FB20 /* LoginViewController.swift */,
+				EC1CE23427BFAD4D00ED09D7 /* ForgotPasswordViewController.swift */,
 			);
 			path = Authentification;
 			sourceTree = "<group>";
@@ -474,6 +477,7 @@
 				ECA3655527A73293008A9C46 /* ViewController.swift in Sources */,
 				ECD21E1427B143700022E26B /* GenderPickerViewDelegate.swift in Sources */,
 				ECD21E1827B93FB20022E26B /* LandingPage1VC.swift in Sources */,
+				EC1CE23527BFAD4D00ED09D7 /* ForgotPasswordViewController.swift in Sources */,
 				EC18D82627BD068800902639 /* Model.swift in Sources */,
 				ECA3655127A73293008A9C46 /* AppDelegate.swift in Sources */,
 				EC18D82F27BD1F9D00902639 /* HalfRoundedUIView.swift in Sources */,

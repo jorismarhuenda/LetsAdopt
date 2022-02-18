@@ -472,14 +472,6 @@ class FillInfoViewController: UIViewController {
                         Core.shared.setCurrentUserEmail(email)
                         Core.shared.setCurrentUserFullName(fullName)
                         
-                    ChatDatabaseManager.shared.insertUser(with: ChatAppUser(fullName: fullName, emailAddress: email), completion: {
-                        success in
-                        if (success){
-                            print("done insert realtime")
-                        } else {
-                            print("fail insert realtime")
-                        }
-                    })
                         
                     let fillInfoVC = self?.presentingViewController
                         

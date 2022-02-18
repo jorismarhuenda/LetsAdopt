@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ape-0N-u8k">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ape-0N-u8k">
     <device id="retina6_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -1659,10 +1659,10 @@ about your self!</string>
             </objects>
             <point key="canvasLocation" x="1286.9565217391305" y="77.678571428571431"/>
         </scene>
-        <!--View Controller-->
+        <!--Forgot Password View Controller-->
         <scene sceneID="XXb-g3-6Bg">
             <objects>
-                <viewController id="LDY-Hi-JID" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ForgotPasswordViewController" id="LDY-Hi-JID" customClass="ForgotPasswordViewController" customModule="LetsAdopt" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VzM-NY-2gE">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1682,7 +1682,7 @@ recover password</string>
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v4I-kD-EYX">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v4I-kD-EYX" customClass="HalfRoundedUIView" customModule="LetsAdopt" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="246" width="428" height="680"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4hw-IT-YA8">
@@ -1731,7 +1731,7 @@ recover password</string>
                                             </mask>
                                         </variation>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="GQK-W2-Jmx">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="GQK-W2-Jmx" customClass="FPNTextField" customModule="FlagPhoneNumber">
                                         <rect key="frame" x="40" y="118" width="348" height="44"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="44" id="v0u-nY-i8Y"/>
@@ -1748,6 +1748,9 @@ recover password</string>
                                                 <include reference="v0u-nY-i8Y"/>
                                             </mask>
                                         </variation>
+                                        <connections>
+                                            <action selector="beginEnterPhoneAct:" destination="LDY-Hi-JID" eventType="editingDidEnd" id="b0f-8y-dSi"/>
+                                        </connections>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Ske-j2-Kwe" customClass="MDCOutlinedTextField">
                                         <rect key="frame" x="482" y="40" width="334" height="44"/>
@@ -1767,7 +1770,7 @@ recover password</string>
                                             </mask>
                                         </variation>
                                     </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V90-FP-HVO">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V90-FP-HVO" customClass="MDCButton">
                                         <rect key="frame" x="69" y="198" width="290" height="44"/>
                                         <color key="backgroundColor" name="AppRedColor"/>
                                         <constraints>
@@ -1800,6 +1803,9 @@ recover password</string>
                                                 <include reference="Vnh-PJ-1FA"/>
                                             </mask>
                                         </variation>
+                                        <connections>
+                                            <action selector="sendAct:" destination="LDY-Hi-JID" eventType="touchUpInside" id="g76-Xh-Sxi"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A code will be sent if your account is valid" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DY5-lB-8NJ">
                                         <rect key="frame" x="263.5" y="40" width="369" height="23"/>
@@ -1854,12 +1860,15 @@ recover password</string>
                                         <color key="textColor" name="AppTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BMC-EO-wVt">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BMC-EO-wVt" customClass="MDCButton">
                                         <rect key="frame" x="69" y="262" width="290" height="44"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                         <state key="normal" title="BACK">
                                             <color key="titleColor" name="AppRedColor"/>
                                         </state>
+                                        <connections>
+                                            <action selector="backAct:" destination="LDY-Hi-JID" eventType="touchUpInside" id="AY9-Zu-0a0"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -2142,6 +2151,12 @@ recover password</string>
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="backButton" destination="BMC-EO-wVt" id="dvI-eS-iFE"/>
+                        <outlet property="dummyPhoneTextField" destination="4hw-IT-YA8" id="dsC-bd-ZE1"/>
+                        <outlet property="phoneTextField" destination="GQK-W2-Jmx" id="bAh-Ba-XJR"/>
+                        <outlet property="sendButton" destination="V90-FP-HVO" id="Tsm-SZ-uPL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mnf-ry-mcC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -3167,6 +3182,20 @@ Enter your new password to login
             <point key="canvasLocation" x="1286.9565217391305" y="746.65178571428567"/>
         </scene>
     </scenes>
+    <designables>
+        <designable name="7An-Yd-ynD">
+            <size key="intrinsicContentSize" width="83" height="32"/>
+        </designable>
+        <designable name="GMa-EN-v1f">
+            <size key="intrinsicContentSize" width="52" height="32"/>
+        </designable>
+        <designable name="XhF-Ge-gz3">
+            <size key="intrinsicContentSize" width="55" height="32"/>
+        </designable>
+        <designable name="YzP-0U-V9r">
+            <size key="intrinsicContentSize" width="58" height="32"/>
+        </designable>
+    </designables>
     <resources>
         <image name="corgi-hello" width="144" height="117"/>
         <image name="fb-button" width="133" height="43"/>
