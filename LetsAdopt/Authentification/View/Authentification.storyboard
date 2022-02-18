@@ -2678,10 +2678,10 @@ your account</string>
             </objects>
             <point key="canvasLocation" x="525" y="747"/>
         </scene>
-        <!--View Controller-->
+        <!--Enter New Password View Controller-->
         <scene sceneID="Lf3-o6-Nes">
             <objects>
-                <viewController id="Eun-eE-0bc" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="EnterNewPasswordViewController" id="Eun-eE-0bc" customClass="EnterNewPasswordViewController" customModule="LetsAdopt" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8fj-5M-UyV">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -2701,7 +2701,7 @@ new password</string>
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hey-by-J83">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hey-by-J83" customClass="HalfRoundedUIView" customModule="LetsAdopt" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="246" width="428" height="680"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="7wf-z8-JjV" customClass="MDCOutlinedTextField">
@@ -2734,7 +2734,7 @@ new password</string>
                                             </mask>
                                         </variation>
                                     </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AuS-DE-YY6">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AuS-DE-YY6" customClass="MDCButton">
                                         <rect key="frame" x="69" y="272" width="290" height="44"/>
                                         <color key="backgroundColor" name="AppRedColor"/>
                                         <constraints>
@@ -2767,6 +2767,9 @@ new password</string>
                                                 <include reference="4VO-KL-4H1"/>
                                             </mask>
                                         </variation>
+                                        <connections>
+                                            <action selector="doneAct:" destination="Eun-eE-0bc" eventType="touchUpInside" id="o3s-3u-KH7"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A code will be sent if your account is valid" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tSs-We-Mjc">
                                         <rect key="frame" x="263.5" y="40" width="369" height="23"/>
@@ -2814,7 +2817,7 @@ new password</string>
                                             </mask>
                                         </variation>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="5mV-eN-C2M">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="5mV-eN-C2M" customClass="MDCOutlinedTextField">
                                         <rect key="frame" x="40" y="118" width="348" height="44"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="44" id="BPJ-68-FaO"/>
@@ -2880,7 +2883,7 @@ new password</string>
                                             </mask>
                                         </variation>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="WYh-rg-E3z">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="WYh-rg-E3z" customClass="MDCOutlinedTextField">
                                         <rect key="frame" x="40" y="192" width="348" height="44"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="44" id="wHs-1u-hYp"/>
@@ -2914,6 +2917,9 @@ Enter your new password to login
                                         <state key="normal" title="BACK TO LOGIN">
                                             <color key="titleColor" name="AppRedColor"/>
                                         </state>
+                                        <connections>
+                                            <action selector="backAct:" destination="Eun-eE-0bc" eventType="touchUpInside" id="F9Q-zi-LwE"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -3176,6 +3182,12 @@ Enter your new password to login
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="backButton" destination="b8E-i0-bRo" id="D4e-aW-CZl"/>
+                        <outlet property="doneButton" destination="AuS-DE-YY6" id="zeD-4q-zvK"/>
+                        <outlet property="passwordTextField" destination="5mV-eN-C2M" id="nht-cv-P5W"/>
+                        <outlet property="retypePasswordTextField" destination="WYh-rg-E3z" id="IAA-Hk-wdU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jeg-v6-S03" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
