@@ -113,7 +113,10 @@ class RegisterViewController: UIViewController {
     }
     
     @IBAction func loginAct(_ sender: Any) {
-        
+        let dest = self.storyboard?.instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
+
+        dest.modalPresentationStyle = .fullScreen
+        self.present(dest, animated: true, completion: nil)
     }
     
     func isSame(_ password: String, _ retype: String) -> Bool {

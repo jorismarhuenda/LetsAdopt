@@ -54,11 +54,34 @@ class VerifyAccountViewController: UIViewController {
     }
     
     @IBAction func backAct(_ sender: Any) {
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "ForgotPasswordViewController") as! ForgotPasswordViewController
+        vc.modalPresentationStyle = .fullScreen
         
+        self.present(vc, animated: false, completion: nil)
     }
     
     @IBAction func verifyAct(_ sender: Any) {
-        
+        if let code = otpCode {
+                    VerifyAPI.validateVerificationCode(self.countryCode, self.phoneNumber, code) { checked in
+                        if (checked.success) {
+                            
+                            print(checked.message)
+                            
+                            let vc = self.presentingViewController
+                            
+                            self.dismiss(animated: true, completion: {
+                                let dest = self.storyboard?.instantiateViewController(withIdentifier: "EnterNewPasswordViewController") as! EnterNewPasswordViewController
+                                dest.fullPhoneNumber = self.countryCode + self.phoneNumber
+                                
+                                dest.modalPresentationStyle = .fullScreen
+                                vc?.present(dest, animated: true, completion: nil)
+                            })
+                            
+                        } else {
+                           print(checked.message)
+                        }
+                    }
+                }
     }
 }
 
