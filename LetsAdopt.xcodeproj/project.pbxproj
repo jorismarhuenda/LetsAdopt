@@ -142,14 +142,10 @@
 		EC18D7A127BBF4B100902639 /* Authentification */ = {
 			isa = PBXGroup;
 			children = (
-				ECA3658527A7352D008A9C46 /* Authentification.storyboard */,
-				EC18D82527BD068800902639 /* Model.swift */,
-				EC18D82B27BD1C4200902639 /* RegisterViewController.swift */,
-				EC18D83027BD401600902639 /* VerifyAPI.swift */,
-				EC18D83227BD416300902639 /* VerifyAccountViewController.swift */,
-				ECAD872027BE60700046FB20 /* FillInfoViewController.swift */,
-				ECAD87A527BE84CE0046FB20 /* LoginViewController.swift */,
-				EC1CE23427BFAD4D00ED09D7 /* ForgotPasswordViewController.swift */,
+				EC1CE23927BFB1B400ED09D7 /* Model */,
+				EC1CE23827BFB1A700ED09D7 /* View */,
+				EC1CE23727BFB19000ED09D7 /* Controller */,
+				EC1CE23627BFB18200ED09D7 /* API */,
 			);
 			path = Authentification;
 			sourceTree = "<group>";
@@ -162,6 +158,42 @@
 				ECAD872227BE6A850046FB20 /* Core.swift */,
 			);
 			path = Core;
+			sourceTree = "<group>";
+		};
+		EC1CE23627BFB18200ED09D7 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				EC18D83027BD401600902639 /* VerifyAPI.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		EC1CE23727BFB19000ED09D7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				ECAD87A527BE84CE0046FB20 /* LoginViewController.swift */,
+				EC18D82B27BD1C4200902639 /* RegisterViewController.swift */,
+				ECAD872027BE60700046FB20 /* FillInfoViewController.swift */,
+				EC1CE23427BFAD4D00ED09D7 /* ForgotPasswordViewController.swift */,
+				EC18D83227BD416300902639 /* VerifyAccountViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		EC1CE23827BFB1A700ED09D7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				ECA3658527A7352D008A9C46 /* Authentification.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EC1CE23927BFB1B400ED09D7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EC18D82527BD068800902639 /* Model.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		ECA3654427A73293008A9C46 = {
