@@ -19,6 +19,7 @@
 		EC4C144B27C50C270042FC81 /* AddPetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4C144A27C50C270042FC81 /* AddPetViewController.swift */; };
 		EC4C144D27C50C620042FC81 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4C144C27C50C610042FC81 /* ChatViewController.swift */; };
 		EC4C144F27C50CBB0042FC81 /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4C144E27C50CBB0042FC81 /* UserViewController.swift */; };
+		EC4C145127C5145F0042FC81 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4C145027C5145F0042FC81 /* LoadingViewController.swift */; };
 		EC804B0427C2C0BD0097FFA1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC804B0327C2C0BD0097FFA1 /* AppDelegate.swift */; };
 		EC804B0627C2C0BD0097FFA1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC804B0527C2C0BD0097FFA1 /* SceneDelegate.swift */; };
 		EC804B0827C2C0BD0097FFA1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC804B0727C2C0BD0097FFA1 /* ViewController.swift */; };
@@ -90,6 +91,7 @@
 		EC4C144A27C50C270042FC81 /* AddPetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPetViewController.swift; sourceTree = "<group>"; };
 		EC4C144C27C50C610042FC81 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		EC4C144E27C50CBB0042FC81 /* UserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
+		EC4C145027C5145F0042FC81 /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
 		EC804B0027C2C0BC0097FFA1 /* LetsAdopt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LetsAdopt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC804B0327C2C0BD0097FFA1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EC804B0527C2C0BD0097FFA1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -315,6 +317,7 @@
 				EC4C144C27C50C610042FC81 /* ChatViewController.swift */,
 				EC4C144E27C50CBB0042FC81 /* UserViewController.swift */,
 				EC804B0727C2C0BD0097FFA1 /* ViewController.swift */,
+				EC4C145027C5145F0042FC81 /* LoadingViewController.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -625,6 +628,7 @@
 				EC4C144327C3C51D0042FC81 /* ConversationsModel.swift in Sources */,
 				EC804B3E27C2C64A0097FFA1 /* LandingPage1VC.swift in Sources */,
 				EC804B5B27C2CE5F0097FFA1 /* HalfRoundedUIView.swift in Sources */,
+				EC4C145127C5145F0042FC81 /* LoadingViewController.swift in Sources */,
 				EC804B3C27C2C5D90097FFA1 /* IntroductionViewController.swift in Sources */,
 				EC4C143F27C3C4DC0042FC81 /* PetModel.swift in Sources */,
 				EC804B5D27C2CE760097FFA1 /* CardView.swift in Sources */,

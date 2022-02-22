@@ -271,7 +271,7 @@ class RegisterViewController: UIViewController {
                                     } else {
                                         print("1")
                                         if (!self.isValidPassword(testStr: self.passwordTextField.text!)) {
-                                            //alert mat khau yeu
+                                            //alert
                                             print("2")
                                             alertMessage = "Weak password. Password must include at least one uppercase, one lowercase, one digit and 8 characters total "
                                             

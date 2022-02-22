@@ -3240,7 +3240,7 @@ Enter your new password to login
         <image name="google-button" width="134" height="43"/>
         <image name="ic-md-blue-imgpicker" width="34" height="29"/>
         <namedColor name="AccentColor">
-            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.090000003576278687" green="0.20800000429153442" blue="0.35699999332427979" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="AppPrimaryColor">
             <color red="0.60799998044967651" green="0.85900002717971802" blue="0.86699998378753662" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
