@@ -6,3 +6,8 @@
 //
 
 import Foundation
+
+protocol IntroductionDelegate: AnyObject {
+    func skipIntroduce()
+    func nextIntroduce()
+}

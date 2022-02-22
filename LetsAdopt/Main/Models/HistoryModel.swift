@@ -6,3 +6,11 @@
 //
 
 import Foundation
+
+class HistoryModel {
+    var histories: [String] = []
+    
+    func append(_ history: String) {
+        
+    }
+}
