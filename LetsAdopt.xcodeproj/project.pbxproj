@@ -10,6 +10,13 @@
 		63F7D44C573DB82C34F001BE /* Pods_LetsAdoptTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1CDC9B5EBBCF9F745BAEBB9 /* Pods_LetsAdoptTests.framework */; };
 		65956C99FE276A3875D780D9 /* Pods_LetsAdopt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52BC055BC3BACA9AE216F6F2 /* Pods_LetsAdopt.framework */; };
 		E3E583CF7B6BE83C2A406C4B /* Pods_LetsAdopt_LetsAdoptUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BC60B9C4AE4A73CA20C3855 /* Pods_LetsAdopt_LetsAdoptUITests.framework */; };
+		EC1CBE7F27CCD3AF00136D08 /* MyProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1CBE7E27CCD3AF00136D08 /* MyProfileViewController.swift */; };
+		EC1CBE8127CCDB9F00136D08 /* UpdateMyProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1CBE8027CCDB9F00136D08 /* UpdateMyProfileViewController.swift */; };
+		EC1CBE8327CCDC4500136D08 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1CBE8227CCDC4500136D08 /* SearchViewController.swift */; };
+		EC1CBE8527CCDCD800136D08 /* PetDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1CBE8427CCDCD700136D08 /* PetDetailViewController.swift */; };
+		EC1CBE8727CCDD4B00136D08 /* ChatDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1CBE8627CCDD4B00136D08 /* ChatDetailViewController.swift */; };
+		EC1CBE8927CCDDF700136D08 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1CBE8827CCDDF700136D08 /* SettingViewController.swift */; };
+		EC1CBE8B27CCDE4F00136D08 /* ChangePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1CBE8A27CCDE4F00136D08 /* ChangePasswordViewController.swift */; };
 		EC4C143C27C3B9B90042FC81 /* Config.plist in Resources */ = {isa = PBXBuildFile; fileRef = EC4C143B27C3B9B90042FC81 /* Config.plist */; };
 		EC4C143F27C3C4DC0042FC81 /* PetModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4C143E27C3C4DC0042FC81 /* PetModel.swift */; };
 		EC4C144127C3C4FD0042FC81 /* ChatModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4C144027C3C4FD0042FC81 /* ChatModel.swift */; };
@@ -82,6 +89,13 @@
 		6663B31E71D1C267678CABE5 /* Pods-LetsAdoptTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LetsAdoptTests.debug.xcconfig"; path = "Target Support Files/Pods-LetsAdoptTests/Pods-LetsAdoptTests.debug.xcconfig"; sourceTree = "<group>"; };
 		A372CA9A0196290AAAFF5E85 /* Pods-LetsAdopt-LetsAdoptUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LetsAdopt-LetsAdoptUITests.release.xcconfig"; path = "Target Support Files/Pods-LetsAdopt-LetsAdoptUITests/Pods-LetsAdopt-LetsAdoptUITests.release.xcconfig"; sourceTree = "<group>"; };
 		D1CDC9B5EBBCF9F745BAEBB9 /* Pods_LetsAdoptTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LetsAdoptTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC1CBE7E27CCD3AF00136D08 /* MyProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProfileViewController.swift; sourceTree = "<group>"; };
+		EC1CBE8027CCDB9F00136D08 /* UpdateMyProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateMyProfileViewController.swift; sourceTree = "<group>"; };
+		EC1CBE8227CCDC4500136D08 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		EC1CBE8427CCDCD700136D08 /* PetDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetDetailViewController.swift; sourceTree = "<group>"; };
+		EC1CBE8627CCDD4B00136D08 /* ChatDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatDetailViewController.swift; sourceTree = "<group>"; };
+		EC1CBE8827CCDDF700136D08 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		EC1CBE8A27CCDE4F00136D08 /* ChangePasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordViewController.swift; sourceTree = "<group>"; };
 		EC4C143B27C3B9B90042FC81 /* Config.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Config.plist; sourceTree = "<group>"; };
 		EC4C143E27C3C4DC0042FC81 /* PetModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetModel.swift; sourceTree = "<group>"; };
 		EC4C144027C3C4FD0042FC81 /* ChatModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatModel.swift; sourceTree = "<group>"; };
@@ -191,6 +205,13 @@
 				EC4C144427C3C53E0042FC81 /* HistoryModel.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		EC4C149327C6C3200042FC81 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		EC804AF727C2C0BC0097FFA1 = {
@@ -308,6 +329,7 @@
 		EC804B5E27C3AD080097FFA1 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				EC4C149327C6C3200042FC81 /* Views */,
 				EC4C143D27C3C4C60042FC81 /* Models */,
 				EC804B6227C3ADAE0097FFA1 /* Delegate */,
 				EC804B5F27C3AD130097FFA1 /* Resources */,
@@ -318,6 +340,13 @@
 				EC4C144E27C50CBB0042FC81 /* UserViewController.swift */,
 				EC804B0727C2C0BD0097FFA1 /* ViewController.swift */,
 				EC4C145027C5145F0042FC81 /* LoadingViewController.swift */,
+				EC1CBE7E27CCD3AF00136D08 /* MyProfileViewController.swift */,
+				EC1CBE8027CCDB9F00136D08 /* UpdateMyProfileViewController.swift */,
+				EC1CBE8227CCDC4500136D08 /* SearchViewController.swift */,
+				EC1CBE8427CCDCD700136D08 /* PetDetailViewController.swift */,
+				EC1CBE8627CCDD4B00136D08 /* ChatDetailViewController.swift */,
+				EC1CBE8827CCDDF700136D08 /* SettingViewController.swift */,
+				EC1CBE8A27CCDE4F00136D08 /* ChangePasswordViewController.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -631,23 +660,30 @@
 				EC4C145127C5145F0042FC81 /* LoadingViewController.swift in Sources */,
 				EC804B3C27C2C5D90097FFA1 /* IntroductionViewController.swift in Sources */,
 				EC4C143F27C3C4DC0042FC81 /* PetModel.swift in Sources */,
+				EC1CBE8127CCDB9F00136D08 /* UpdateMyProfileViewController.swift in Sources */,
 				EC804B5D27C2CE760097FFA1 /* CardView.swift in Sources */,
 				EC804B4027C2C6650097FFA1 /* LandingPage2VC.swift in Sources */,
 				EC4C144B27C50C270042FC81 /* AddPetViewController.swift in Sources */,
+				EC1CBE7F27CCD3AF00136D08 /* MyProfileViewController.swift in Sources */,
 				EC4C144527C3C53E0042FC81 /* HistoryModel.swift in Sources */,
 				EC4C144127C3C4FD0042FC81 /* ChatModel.swift in Sources */,
 				EC804B6427C3ADC40097FFA1 /* SortPickerViewDelegate.swift in Sources */,
 				EC804B0427C2C0BD0097FFA1 /* AppDelegate.swift in Sources */,
 				EC4C144F27C50CBB0042FC81 /* UserViewController.swift in Sources */,
 				EC804B5127C2C8030097FFA1 /* EnterNewPasswordViewController.swift in Sources */,
+				EC1CBE8527CCDCD800136D08 /* PetDetailViewController.swift in Sources */,
 				EC804B5527C2CE160097FFA1 /* VerifyAPI.swift in Sources */,
 				EC804B6627C3ADE20097FFA1 /* GenderPickerViewDelegate.swift in Sources */,
 				EC4C144927C50BC90042FC81 /* HomeViewController.swift in Sources */,
 				EC804B3827C2C50D0097FFA1 /* IntroductionDelegate.swift in Sources */,
+				EC1CBE8727CCDD4B00136D08 /* ChatDetailViewController.swift in Sources */,
 				EC804B4927C2C7840097FFA1 /* FillInfoViewController.swift in Sources */,
+				EC1CBE8927CCDDF700136D08 /* SettingViewController.swift in Sources */,
 				EC804B4D27C2C7B50097FFA1 /* ForgotPasswordViewController.swift in Sources */,
 				EC804B6827C3AE0C0097FFA1 /* PetTypePickerViewDelegate.swift in Sources */,
 				EC804B5827C2CE330097FFA1 /* Core.swift in Sources */,
+				EC1CBE8B27CCDE4F00136D08 /* ChangePasswordViewController.swift in Sources */,
+				EC1CBE8327CCDC4500136D08 /* SearchViewController.swift in Sources */,
 				EC804B6A27C3B3900097FFA1 /* ChatDatabaseManager.swift in Sources */,
 				EC804B4B27C2C7970097FFA1 /* Model.swift in Sources */,
 				EC804B0627C2C0BD0097FFA1 /* SceneDelegate.swift in Sources */,

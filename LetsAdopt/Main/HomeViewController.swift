@@ -60,4 +60,5 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var othersLabel: UILabel!
     
     @IBOutlet weak var listPetCollectionView: UICollectionView!
+    
 }
