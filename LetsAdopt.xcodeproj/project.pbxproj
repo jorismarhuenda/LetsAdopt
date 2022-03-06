@@ -60,6 +60,10 @@
 		EC804B6627C3ADE20097FFA1 /* GenderPickerViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC804B6527C3ADE20097FFA1 /* GenderPickerViewDelegate.swift */; };
 		EC804B6827C3AE0C0097FFA1 /* PetTypePickerViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC804B6727C3AE0C0097FFA1 /* PetTypePickerViewDelegate.swift */; };
 		EC804B6A27C3B3900097FFA1 /* ChatDatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC804B6927C3B3900097FFA1 /* ChatDatabaseManager.swift */; };
+		ECB461F627D4DEE500DF9D93 /* PetCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB461F527D4DEE500DF9D93 /* PetCollectionViewCell.swift */; };
+		ECB461F827D4DF1500DF9D93 /* UserPetCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB461F727D4DF1500DF9D93 /* UserPetCollectionViewCell.swift */; };
+		ECB461FA27D4DF4600DF9D93 /* HistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB461F927D4DF4600DF9D93 /* HistoryTableViewCell.swift */; };
+		ECB461FC27D4DF6B00DF9D93 /* RecentPetCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB461FB27D4DF6B00DF9D93 /* RecentPetCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -143,6 +147,10 @@
 		EC804B6527C3ADE20097FFA1 /* GenderPickerViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenderPickerViewDelegate.swift; sourceTree = "<group>"; };
 		EC804B6727C3AE0C0097FFA1 /* PetTypePickerViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetTypePickerViewDelegate.swift; sourceTree = "<group>"; };
 		EC804B6927C3B3900097FFA1 /* ChatDatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatDatabaseManager.swift; sourceTree = "<group>"; };
+		ECB461F527D4DEE500DF9D93 /* PetCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetCollectionViewCell.swift; sourceTree = "<group>"; };
+		ECB461F727D4DF1500DF9D93 /* UserPetCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPetCollectionViewCell.swift; sourceTree = "<group>"; };
+		ECB461F927D4DF4600DF9D93 /* HistoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTableViewCell.swift; sourceTree = "<group>"; };
+		ECB461FB27D4DF6B00DF9D93 /* RecentPetCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentPetCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -210,6 +218,10 @@
 		EC4C149327C6C3200042FC81 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				ECB461F527D4DEE500DF9D93 /* PetCollectionViewCell.swift */,
+				ECB461F727D4DF1500DF9D93 /* UserPetCollectionViewCell.swift */,
+				ECB461F927D4DF4600DF9D93 /* HistoryTableViewCell.swift */,
+				ECB461FB27D4DF6B00DF9D93 /* RecentPetCollectionViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -652,6 +664,8 @@
 				EC804B4727C2C73F0097FFA1 /* RegisterViewController.swift in Sources */,
 				EC804B0827C2C0BD0097FFA1 /* ViewController.swift in Sources */,
 				EC804B4F27C2C7DB0097FFA1 /* VerifyAccountViewController.swift in Sources */,
+				ECB461FC27D4DF6B00DF9D93 /* RecentPetCollectionViewCell.swift in Sources */,
+				ECB461F827D4DF1500DF9D93 /* UserPetCollectionViewCell.swift in Sources */,
 				EC804B6127C3AD2D0097FFA1 /* ChatStorageManager.swift in Sources */,
 				EC804B5327C2C81D0097FFA1 /* LoginViewController.swift in Sources */,
 				EC4C144327C3C51D0042FC81 /* ConversationsModel.swift in Sources */,
@@ -659,6 +673,7 @@
 				EC804B5B27C2CE5F0097FFA1 /* HalfRoundedUIView.swift in Sources */,
 				EC4C145127C5145F0042FC81 /* LoadingViewController.swift in Sources */,
 				EC804B3C27C2C5D90097FFA1 /* IntroductionViewController.swift in Sources */,
+				ECB461F627D4DEE500DF9D93 /* PetCollectionViewCell.swift in Sources */,
 				EC4C143F27C3C4DC0042FC81 /* PetModel.swift in Sources */,
 				EC1CBE8127CCDB9F00136D08 /* UpdateMyProfileViewController.swift in Sources */,
 				EC804B5D27C2CE760097FFA1 /* CardView.swift in Sources */,
@@ -689,6 +704,7 @@
 				EC804B0627C2C0BD0097FFA1 /* SceneDelegate.swift in Sources */,
 				EC804B4227C2C6820097FFA1 /* WelcomeVC.swift in Sources */,
 				EC4C144D27C50C620042FC81 /* ChatViewController.swift in Sources */,
+				ECB461FA27D4DF4600DF9D93 /* HistoryTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
