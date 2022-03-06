@@ -64,6 +64,8 @@
 		ECB461F827D4DF1500DF9D93 /* UserPetCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB461F727D4DF1500DF9D93 /* UserPetCollectionViewCell.swift */; };
 		ECB461FA27D4DF4600DF9D93 /* HistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB461F927D4DF4600DF9D93 /* HistoryTableViewCell.swift */; };
 		ECB461FC27D4DF6B00DF9D93 /* RecentPetCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB461FB27D4DF6B00DF9D93 /* RecentPetCollectionViewCell.swift */; };
+		ECB461FE27D4E03D00DF9D93 /* RecentPetDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB461FD27D4E03D00DF9D93 /* RecentPetDelegate.swift */; };
+		ECB4620027D4E0A700DF9D93 /* OtherUserProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB461FF27D4E0A700DF9D93 /* OtherUserProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -151,6 +153,8 @@
 		ECB461F727D4DF1500DF9D93 /* UserPetCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPetCollectionViewCell.swift; sourceTree = "<group>"; };
 		ECB461F927D4DF4600DF9D93 /* HistoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTableViewCell.swift; sourceTree = "<group>"; };
 		ECB461FB27D4DF6B00DF9D93 /* RecentPetCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentPetCollectionViewCell.swift; sourceTree = "<group>"; };
+		ECB461FD27D4E03D00DF9D93 /* RecentPetDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentPetDelegate.swift; sourceTree = "<group>"; };
+		ECB461FF27D4E0A700DF9D93 /* OtherUserProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherUserProfileViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -359,6 +363,7 @@
 				EC1CBE8627CCDD4B00136D08 /* ChatDetailViewController.swift */,
 				EC1CBE8827CCDDF700136D08 /* SettingViewController.swift */,
 				EC1CBE8A27CCDE4F00136D08 /* ChangePasswordViewController.swift */,
+				ECB461FF27D4E0A700DF9D93 /* OtherUserProfileViewController.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -378,6 +383,7 @@
 				EC804B6327C3ADC40097FFA1 /* SortPickerViewDelegate.swift */,
 				EC804B6527C3ADE20097FFA1 /* GenderPickerViewDelegate.swift */,
 				EC804B6727C3AE0C0097FFA1 /* PetTypePickerViewDelegate.swift */,
+				ECB461FD27D4E03D00DF9D93 /* RecentPetDelegate.swift */,
 			);
 			path = Delegate;
 			sourceTree = "<group>";
@@ -665,6 +671,7 @@
 				EC804B0827C2C0BD0097FFA1 /* ViewController.swift in Sources */,
 				EC804B4F27C2C7DB0097FFA1 /* VerifyAccountViewController.swift in Sources */,
 				ECB461FC27D4DF6B00DF9D93 /* RecentPetCollectionViewCell.swift in Sources */,
+				ECB4620027D4E0A700DF9D93 /* OtherUserProfileViewController.swift in Sources */,
 				ECB461F827D4DF1500DF9D93 /* UserPetCollectionViewCell.swift in Sources */,
 				EC804B6127C3AD2D0097FFA1 /* ChatStorageManager.swift in Sources */,
 				EC804B5327C2C81D0097FFA1 /* LoginViewController.swift in Sources */,
@@ -690,6 +697,7 @@
 				EC804B5527C2CE160097FFA1 /* VerifyAPI.swift in Sources */,
 				EC804B6627C3ADE20097FFA1 /* GenderPickerViewDelegate.swift in Sources */,
 				EC4C144927C50BC90042FC81 /* HomeViewController.swift in Sources */,
+				ECB461FE27D4E03D00DF9D93 /* RecentPetDelegate.swift in Sources */,
 				EC804B3827C2C50D0097FFA1 /* IntroductionDelegate.swift in Sources */,
 				EC1CBE8727CCDD4B00136D08 /* ChatDetailViewController.swift in Sources */,
 				EC804B4927C2C7840097FFA1 /* FillInfoViewController.swift in Sources */,
