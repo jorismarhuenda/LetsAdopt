@@ -67,6 +67,10 @@
 		ECB461FE27D4E03D00DF9D93 /* RecentPetDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB461FD27D4E03D00DF9D93 /* RecentPetDelegate.swift */; };
 		ECB4620027D4E0A700DF9D93 /* OtherUserProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB461FF27D4E0A700DF9D93 /* OtherUserProfileViewController.swift */; };
 		ECB4620227D4EA0600DF9D93 /* PhotoViewerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB4620127D4EA0600DF9D93 /* PhotoViewerViewController.swift */; };
+		ECB4620427D4EAF800DF9D93 /* ChatFrameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB4620327D4EAF800DF9D93 /* ChatFrameViewController.swift */; };
+		ECB4620627D4ECB700DF9D93 /* LocationPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB4620527D4ECB700DF9D93 /* LocationPickerViewController.swift */; };
+		ECB4620827D4EEBA00DF9D93 /* AppInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB4620727D4EEBA00DF9D93 /* AppInfoViewController.swift */; };
+		ECB4620A27D4F02700DF9D93 /* ChatTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB4620927D4F02700DF9D93 /* ChatTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -157,6 +161,10 @@
 		ECB461FD27D4E03D00DF9D93 /* RecentPetDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentPetDelegate.swift; sourceTree = "<group>"; };
 		ECB461FF27D4E0A700DF9D93 /* OtherUserProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherUserProfileViewController.swift; sourceTree = "<group>"; };
 		ECB4620127D4EA0600DF9D93 /* PhotoViewerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewerViewController.swift; sourceTree = "<group>"; };
+		ECB4620327D4EAF800DF9D93 /* ChatFrameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatFrameViewController.swift; sourceTree = "<group>"; };
+		ECB4620527D4ECB700DF9D93 /* LocationPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationPickerViewController.swift; sourceTree = "<group>"; };
+		ECB4620727D4EEBA00DF9D93 /* AppInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppInfoViewController.swift; sourceTree = "<group>"; };
+		ECB4620927D4F02700DF9D93 /* ChatTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -228,6 +236,7 @@
 				ECB461F727D4DF1500DF9D93 /* UserPetCollectionViewCell.swift */,
 				ECB461F927D4DF4600DF9D93 /* HistoryTableViewCell.swift */,
 				ECB461FB27D4DF6B00DF9D93 /* RecentPetCollectionViewCell.swift */,
+				ECB4620927D4F02700DF9D93 /* ChatTableViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -367,6 +376,9 @@
 				EC1CBE8A27CCDE4F00136D08 /* ChangePasswordViewController.swift */,
 				ECB461FF27D4E0A700DF9D93 /* OtherUserProfileViewController.swift */,
 				ECB4620127D4EA0600DF9D93 /* PhotoViewerViewController.swift */,
+				ECB4620327D4EAF800DF9D93 /* ChatFrameViewController.swift */,
+				ECB4620527D4ECB700DF9D93 /* LocationPickerViewController.swift */,
+				ECB4620727D4EEBA00DF9D93 /* AppInfoViewController.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -680,11 +692,14 @@
 				EC804B5327C2C81D0097FFA1 /* LoginViewController.swift in Sources */,
 				EC4C144327C3C51D0042FC81 /* ConversationsModel.swift in Sources */,
 				EC804B3E27C2C64A0097FFA1 /* LandingPage1VC.swift in Sources */,
+				ECB4620827D4EEBA00DF9D93 /* AppInfoViewController.swift in Sources */,
 				EC804B5B27C2CE5F0097FFA1 /* HalfRoundedUIView.swift in Sources */,
+				ECB4620A27D4F02700DF9D93 /* ChatTableViewCell.swift in Sources */,
 				EC4C145127C5145F0042FC81 /* LoadingViewController.swift in Sources */,
 				EC804B3C27C2C5D90097FFA1 /* IntroductionViewController.swift in Sources */,
 				ECB461F627D4DEE500DF9D93 /* PetCollectionViewCell.swift in Sources */,
 				EC4C143F27C3C4DC0042FC81 /* PetModel.swift in Sources */,
+				ECB4620627D4ECB700DF9D93 /* LocationPickerViewController.swift in Sources */,
 				EC1CBE8127CCDB9F00136D08 /* UpdateMyProfileViewController.swift in Sources */,
 				EC804B5D27C2CE760097FFA1 /* CardView.swift in Sources */,
 				EC804B4027C2C6650097FFA1 /* LandingPage2VC.swift in Sources */,
@@ -704,6 +719,7 @@
 				ECB461FE27D4E03D00DF9D93 /* RecentPetDelegate.swift in Sources */,
 				EC804B3827C2C50D0097FFA1 /* IntroductionDelegate.swift in Sources */,
 				EC1CBE8727CCDD4B00136D08 /* ChatDetailViewController.swift in Sources */,
+				ECB4620427D4EAF800DF9D93 /* ChatFrameViewController.swift in Sources */,
 				EC804B4927C2C7840097FFA1 /* FillInfoViewController.swift in Sources */,
 				EC1CBE8927CCDDF700136D08 /* SettingViewController.swift in Sources */,
 				EC804B4D27C2C7B50097FFA1 /* ForgotPasswordViewController.swift in Sources */,
