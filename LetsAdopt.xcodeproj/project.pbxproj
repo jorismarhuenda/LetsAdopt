@@ -66,6 +66,7 @@
 		ECB461FC27D4DF6B00DF9D93 /* RecentPetCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB461FB27D4DF6B00DF9D93 /* RecentPetCollectionViewCell.swift */; };
 		ECB461FE27D4E03D00DF9D93 /* RecentPetDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB461FD27D4E03D00DF9D93 /* RecentPetDelegate.swift */; };
 		ECB4620027D4E0A700DF9D93 /* OtherUserProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB461FF27D4E0A700DF9D93 /* OtherUserProfileViewController.swift */; };
+		ECB4620227D4EA0600DF9D93 /* PhotoViewerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB4620127D4EA0600DF9D93 /* PhotoViewerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -155,6 +156,7 @@
 		ECB461FB27D4DF6B00DF9D93 /* RecentPetCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentPetCollectionViewCell.swift; sourceTree = "<group>"; };
 		ECB461FD27D4E03D00DF9D93 /* RecentPetDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentPetDelegate.swift; sourceTree = "<group>"; };
 		ECB461FF27D4E0A700DF9D93 /* OtherUserProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherUserProfileViewController.swift; sourceTree = "<group>"; };
+		ECB4620127D4EA0600DF9D93 /* PhotoViewerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -364,6 +366,7 @@
 				EC1CBE8827CCDDF700136D08 /* SettingViewController.swift */,
 				EC1CBE8A27CCDE4F00136D08 /* ChangePasswordViewController.swift */,
 				ECB461FF27D4E0A700DF9D93 /* OtherUserProfileViewController.swift */,
+				ECB4620127D4EA0600DF9D93 /* PhotoViewerViewController.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -690,6 +693,7 @@
 				EC4C144527C3C53E0042FC81 /* HistoryModel.swift in Sources */,
 				EC4C144127C3C4FD0042FC81 /* ChatModel.swift in Sources */,
 				EC804B6427C3ADC40097FFA1 /* SortPickerViewDelegate.swift in Sources */,
+				ECB4620227D4EA0600DF9D93 /* PhotoViewerViewController.swift in Sources */,
 				EC804B0427C2C0BD0097FFA1 /* AppDelegate.swift in Sources */,
 				EC4C144F27C50CBB0042FC81 /* UserViewController.swift in Sources */,
 				EC804B5127C2C8030097FFA1 /* EnterNewPasswordViewController.swift in Sources */,
