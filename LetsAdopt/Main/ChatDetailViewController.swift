@@ -48,16 +48,6 @@ class ChatDetailViewController: MessagesViewController {
                          senderId: safeEmail,
                          displayName: "Me")
        }
-
-//       init(with email: String, id: String?) {
-//           self.conversationId = id
-//           self.otherUserEmail = email
-//           super.init(nibName: nil, bundle: nil)
-//       }
-//
-//       required init?(coder: NSCoder) {
-//           fatalError("init(coder:) has not been implemented")
-//       }
        
     
     override func viewDidLoad() {
@@ -150,9 +140,7 @@ class ChatDetailViewController: MessagesViewController {
            actionSheet.addAction(UIAlertAction(title: "Photo", style: .default, handler: { [weak self] _ in
                self?.presentPhotoInputActionsheet()
            }))
-//           actionSheet.addAction(UIAlertAction(title: "Video", style: .default, handler: { [weak self]  _ in
-//               self?.presentVideoInputActionsheet()
-//           }))
+
 
            actionSheet.addAction(UIAlertAction(title: "Location", style: .default, handler: { [weak self]  _ in
                self?.presentLocationPicker()
@@ -231,8 +219,6 @@ class ChatDetailViewController: MessagesViewController {
                         return
                     }
 
-                // Provides a PHAsset object
-                    // Retrieve a UIImage from a PHAsset using
                     let options = PHImageRequestOptions()
                 options.deliveryMode = .highQualityFormat
                 options.isNetworkAccessAllowed = true
@@ -523,8 +509,6 @@ extension ChatDetailViewController: MessagesDataSource, MessagesLayoutDelegate, 
         }
         else {
             
-            //let tokens = self.otherUserEmail.components(separatedBy: "-")
-            //let originEmail = tokens[0] + "@" + tokens[1] + "." + tokens[2]
             let originEmail = ChatDatabaseManager.shared.restoreEmail(safeEmail: self.otherUserEmail)
             
             db.collection("users").whereField("email", isEqualTo: originEmail).limit(to: 1)

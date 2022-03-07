@@ -6351,28 +6351,28 @@ Information</string>
     </scenes>
     <designables>
         <designable name="9Ee-qM-aJ3">
-            <size key="intrinsicContentSize" width="71" height="32"/>
+            <size key="intrinsicContentSize" width="59" height="29"/>
         </designable>
         <designable name="OtC-dW-XCs">
-            <size key="intrinsicContentSize" width="72" height="32"/>
+            <size key="intrinsicContentSize" width="60" height="29"/>
         </designable>
         <designable name="Oym-aX-d4d">
-            <size key="intrinsicContentSize" width="30" height="32"/>
+            <size key="intrinsicContentSize" width="30" height="29"/>
         </designable>
         <designable name="UK9-WO-sJi">
-            <size key="intrinsicContentSize" width="18" height="22"/>
+            <size key="intrinsicContentSize" width="18" height="17"/>
         </designable>
         <designable name="VVH-ce-O1T">
-            <size key="intrinsicContentSize" width="35" height="32"/>
+            <size key="intrinsicContentSize" width="30" height="29"/>
         </designable>
         <designable name="X8b-YR-dUW">
-            <size key="intrinsicContentSize" width="87" height="32"/>
+            <size key="intrinsicContentSize" width="73" height="29"/>
         </designable>
         <designable name="wkm-Yn-h09">
-            <size key="intrinsicContentSize" width="55" height="32"/>
+            <size key="intrinsicContentSize" width="46" height="29"/>
         </designable>
         <designable name="ysn-zM-kEb">
-            <size key="intrinsicContentSize" width="75" height="32"/>
+            <size key="intrinsicContentSize" width="63" height="29"/>
         </designable>
     </designables>
     <resources>

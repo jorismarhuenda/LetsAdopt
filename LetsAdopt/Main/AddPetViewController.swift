@@ -131,8 +131,6 @@ class AddPetViewController: UIViewController {
                       return
                   }
 
-              // Provides a PHAsset object
-                  // Retrieve a UIImage from a PHAsset using
                   let options = PHImageRequestOptions()
               options.deliveryMode = .highQualityFormat
               options.isNetworkAccessAllowed = true
@@ -182,8 +180,6 @@ class AddPetViewController: UIViewController {
                       return
                   }
 
-              // Provides a PHAsset object
-                  // Retrieve a UIImage from a PHAsset using
                   let options = PHImageRequestOptions()
               options.deliveryMode = .highQualityFormat
               options.isNetworkAccessAllowed = true
@@ -234,8 +230,6 @@ class AddPetViewController: UIViewController {
                       return
                   }
 
-              // Provides a PHAsset object
-                  // Retrieve a UIImage from a PHAsset using
                   let options = PHImageRequestOptions()
               options.deliveryMode = .highQualityFormat
               options.isNetworkAccessAllowed = true
@@ -286,8 +280,6 @@ class AddPetViewController: UIViewController {
                       return
                   }
 
-              // Provides a PHAsset object
-                  // Retrieve a UIImage from a PHAsset using
                   let options = PHImageRequestOptions()
               options.deliveryMode = .highQualityFormat
               options.isNetworkAccessAllowed = true
@@ -407,7 +399,7 @@ class AddPetViewController: UIViewController {
         }
         newPet.gender = genderText == "Male"
         
-        let typeText = petTypeTextField.text ?? "" //Bien text cua gender
+        let typeText = petTypeTextField.text ?? ""
         if (typeText == "") {
             let appearance = SCLAlertView.SCLAppearance(
                 kButtonFont: UIFont(name: "HelveticaNeue", size: 17)!,
