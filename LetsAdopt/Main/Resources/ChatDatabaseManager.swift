@@ -10,10 +10,10 @@ import Firebase
 import MessageKit
 import CoreLocation
 
-/// Manager object to read and write data to real time firebase database
+// Manager object to read and write data to real time firebase database
 final class ChatDatabaseManager {
 
-    /// Shared instance of class
+    // Shared instance of class
     public static let shared = ChatDatabaseManager()
     
     let database = Database.database().reference()
@@ -27,7 +27,7 @@ final class ChatDatabaseManager {
 
 extension ChatDatabaseManager {
 
-    /// Returns dictionary node at child path
+    // Returns dictionary node at child path
     public func getDataFor(path: String, completion: @escaping (Result<Any, Error>) -> Void) {
         database.child("\(path)").observeSingleEvent(of: .value) { snapshot in
             guard let value = snapshot.value else {
@@ -44,10 +44,10 @@ extension ChatDatabaseManager {
 
 extension ChatDatabaseManager {
 
-    /// Checks if user exists for given email
-    /// Parameters
-    /// - `email`:              Target email to be checked
-    /// - `completion`:   Async closure to return with result
+    // Checks if user exists for given email
+    // Parameters
+    // - `email`:              Target email to be checked
+    // - `completion`:   Async closure to return with result
     public func userExists(with email: String,
                            completion: @escaping ((Bool) -> Void)) {
 
@@ -63,7 +63,7 @@ extension ChatDatabaseManager {
 
     }
 
-    /// Inserts new user to database
+    // Inserts new user to database
     public func insertUser(with user: ChatAppUser, completion: @escaping (Bool) -> Void) {
         database.child(user.safeEmail).setValue([
             "fullName": user.fullName,
@@ -119,7 +119,7 @@ extension ChatDatabaseManager {
         })
     }
     
-    /// Inserts new user to database
+    // Inserts new user to database
     public func updateUserName(with user: ChatAppUser, completion: @escaping (Bool) -> Void) {
         database.child(user.safeEmail).updateChildValues([
             "fullName": user.fullName,
@@ -165,7 +165,7 @@ extension ChatDatabaseManager {
     
     
 
-    /// Gets all users from database
+    // Gets all users from database
     public func getAllUsers(completion: @escaping (Result<[[String: String]], Error>) -> Void) {
         database.child("users").observeSingleEvent(of: .value, with: { snapshot in
             guard let value = snapshot.value as? [[String: String]] else {
@@ -195,7 +195,7 @@ extension ChatDatabaseManager {
 
     
 
-    /// Creates a new conversation with target user emamil and first message sent
+    // Creates a new conversation with target user emamil and first message sent
     public func createNewConversation(with otherUserEmail: String, name: String, firstMessage: Message, completion: @escaping (Bool) -> Void) {
 
         
@@ -385,7 +385,7 @@ extension ChatDatabaseManager {
         })
     }
 
-    /// Fetches and returns all conversations for the user with passed in email
+    // Fetches and returns all conversations for the user with passed in email
     public func getAllConversations(for email: String, completion: @escaping (Result<[Conversation], Error>) -> Void) {
         database.child("\(email)/conversations").observe(.value, with: { snapshot in
             guard snapshot.value as? [[String: Any]] != nil else{
@@ -418,7 +418,7 @@ extension ChatDatabaseManager {
         })
     }
 
-    /// Gets all mmessages for a given conversatino
+    // Gets all mmessages for a given conversatino
     public func getAllMessagesForConversation(with id: String, completion: @escaping (Result<[Message], Error>) -> Void) {
         print("getting all message..")
         database.child("\(id)/messages").observe(.value, with: { (snapshot) in
@@ -497,7 +497,7 @@ extension ChatDatabaseManager {
         })
     }
 
-    /// Sends a message with target conversation and message
+    // Sends a message with target conversation and message
     public func sendMessage(to conversation: String, otherUserEmail: String, name: String, newMessage: Message, completion: @escaping (Bool) -> Void) {
         // add new message to messages
         // update sender latest message
@@ -783,7 +783,6 @@ struct ChatAppUser {
     }
 
     var profilePictureFileName: String {
-
         return "\(safeEmail)_profile_picture.png"
     }
 }

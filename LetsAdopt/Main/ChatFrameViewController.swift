@@ -326,6 +326,6 @@ extension ChatFrameViewController: MessageCellDelegate {
         }
 
         let message = messages[indexPath.section]
-
+        
     }
 }

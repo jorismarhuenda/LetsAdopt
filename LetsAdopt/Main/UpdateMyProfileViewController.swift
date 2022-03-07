@@ -18,7 +18,7 @@ import FlagPhoneNumber
 import SCLAlertView
 import ProgressHUD
 
-protocol UpdateInfoDelegate: class {
+protocol UpdateInfoDelegate: AnyObject {
     func updateChangeInfo()
 }
 
