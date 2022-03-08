@@ -59,22 +59,28 @@ class PetDetailViewController: UIViewController {
         petAddressLabel.text = pet.address
         petDescriptionLabel.text = pet.description
         
-        db.collection("users").document(pet.user_id).getDocument { (document, error) in
+        db.collection("users").document(pet.user_id).getDocument { [weak self] (document, error) in
             let data = document?.data()
+            
+            guard let self = self else { return }
             
             self.userNameLabel.text = (data?["fullname"] as! String)
             self.userEmailLabel.text = (data?["email"] as! String)
-            
-            let urlStr = URL(string: (data?["avatar"] as! String))
-            let urlReq = URLRequest(url: urlStr!)
-            
-            let options = ImageLoadingOptions(
-              placeholder: UIImage(named: "user_avatar"),
-              transition: .fadeIn(duration: 0.5)
-            )
-            
-            Nuke.loadImage(with: urlReq, options: options, into: self.userAvatarImageView)
 
+            if let urlStr = URL(string: (data?["avatar"] as! String))
+               {
+                let urlReq = URLRequest(url: urlStr)
+                let options = ImageLoadingOptions(
+                  placeholder: UIImage(named: "user_avatar"),
+                  transition: .fadeIn(duration: 0.5)
+                )
+                
+                Nuke.loadImage(with: urlReq, options: options, into: self.userAvatarImageView)
+            }
+            else {
+                self.userAvatarImageView.image = UIImage.init(named: "user_avatar")
+            }
+            
             self.userAvatarImageView.layer.cornerRadius = 30.0
         }
         

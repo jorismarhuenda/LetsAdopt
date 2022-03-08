@@ -66,12 +66,15 @@ class UpdateMyProfileViewController: UIViewController {
         genderPickerView.dataSource = self
         genderPickerView.delegate = self
         
-        db.collection("users").document(Core.shared.getCurrentUserID()).getDocument {(document, error) in
+        db.collection("users").document(Core.shared.getCurrentUserID()).getDocument { [weak self] (document, error) in
             if let document = document, document.exists {
                 let data = document.data()
                 
-                let urlStr = URL(string: (data?["avatar"] as! String))
-                let urlReq = URLRequest(url: urlStr!)
+                guard let self = self else {return}
+                
+                if let urlStr = URL(string: (data?["avatar"] as! String))
+                {
+                let urlReq = URLRequest(url: urlStr)
 
                 let options = ImageLoadingOptions(
                   placeholder: UIImage(named: "user_avatar"),
@@ -93,8 +96,10 @@ class UpdateMyProfileViewController: UIViewController {
               
 
                 } else {
+                    
                     print("Document does not exist")
                 }
+            }
         }
         
         initView()

@@ -31,15 +31,18 @@ class UserViewController: UIViewController {
         userAvatarImageView.layer.cornerRadius = userAvatarImageView.frame.height/2
         userAvatarImageView.clipsToBounds = true
         
-        db.collection("users").document(Core.shared.getCurrentUserID()).getDocument { [self] (document, error) in
+        db.collection("users").document(Core.shared.getCurrentUserID()).getDocument { [weak self] (document, error) in
+            
             if let document = document, document.exists {
                 let data = document.data()
                 
-                userFullNameLabel.text = data?["fullname"] as? String
-                userEmailLabel.text = data?["email"] as? String
+                guard let self = self else {return}
                 
-                let urlStr = URL(string: (data?["avatar"] as! String))
-                let urlReq = URLRequest(url: urlStr!)
+                self.userFullNameLabel.text = (data?["fullname"] as? String)
+                self.userEmailLabel.text = (data?["email"] as? String)
+                if let urlStr = URL(string: (data?["avatar"] as! String))
+                {
+                let urlReq = URLRequest(url: urlStr)
                 
                 let options = ImageLoadingOptions(
                   placeholder: UIImage(named: "user_avatar"),
@@ -50,8 +53,10 @@ class UserViewController: UIViewController {
                 Nuke.loadImage(with: urlReq, options: options, into: self.userAvatarImageView)
                 
                 } else {
+                    self.userAvatarImageView.image = UIImage.init(named: "user_avatar")
                     print("Document does not exist")
                 }
+            }
         }
         
         
