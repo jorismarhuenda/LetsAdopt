@@ -79,9 +79,11 @@ class OtherUserProfileViewController: UIViewController {
         userAvatarImageView.clipsToBounds = true
         userAvatarImageView.contentMode = .scaleAspectFill
         
-        db.collection("users").document(user_id).getDocument { [self] (document, error) in
+        db.collection("users").document(user_id).getDocument { [weak self] (document, error) in
             if let document = document, document.exists {
                 let data = document.data()
+                
+                guard let self = self else { return }
                 
                 let urlStr = URL(string: (data?["avatar"] as! String))
                 let urlReq = URLRequest(url: urlStr!, cachePolicy: .reloadIgnoringLocalAndRemoteCacheData)
@@ -92,27 +94,27 @@ class OtherUserProfileViewController: UIViewController {
                 )
 
 
-                Nuke.loadImage(with: urlReq, options: options, into: userAvatarImageView)
+                    Nuke.loadImage(with: urlReq, options: options, into: self.userAvatarImageView)
 
-                userFullName.text = data?["fullname"] as? String
-                emailLabel.text = data?["email"] as? String
-                dobLabel.text = data?["dateOfBirth"] as? String
-                genderLabel.text = data?["gender"] as? String
-                addressLabel.text = data?["address"] as? String
-                phoneLabel.text = data?["phone"] as? String
+                    self.userFullName.text = data?["fullname"] as? String
+                    self.emailLabel.text = data?["email"] as? String
+                    self.dobLabel.text = data?["dateOfBirth"] as? String
+                    self.genderLabel.text = data?["gender"] as? String
+                    self.addressLabel.text = data?["address"] as? String
+                    self.phoneLabel.text = data?["phone"] as? String
                 
-                if (user_id == Core.shared.getCurrentUserID()) {
-                    followButton.isHidden = true;
+                if (self.user_id == Core.shared.getCurrentUserID()) {
+                    self.followButton.isHidden = true;
                 }
                 
                 let following = data?["following"] as! [String]
-                followingLabel.text = "\(following.count) following"
+                self.followingLabel.text = "\(following.count) following"
                 
                 let followers = data?["followers"] as! [String]
-                followersLabel.text = "\(followers.count) followers"
+                self.followersLabel.text = "\(followers.count) followers"
                 
                 } else {
-                    print("Document does not exist")
+                    print("Document Does no exist")
                 }
         }
         

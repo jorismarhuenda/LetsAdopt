@@ -76,36 +76,40 @@ class MyProfileViewController: UIViewController {
         userAvatarImageView.layer.cornerRadius = userAvatarImageView.frame.height/2
         userAvatarImageView.clipsToBounds = true
         
-        db.collection("users").document(Core.shared.getCurrentUserID()).getDocument { [self] (document, error) in
+        db.collection("users").document(Core.shared.getCurrentUserID()).getDocument { [weak self] (document, error) in
             if let document = document, document.exists {
                 let data = document.data()
                 
-                let urlStr = URL(string: (data?["avatar"] as! String))
-                let urlReq = URLRequest(url: urlStr!)
+                guard let self = self else { return }
+                
+                if let urlStr = URL(string: (data?["avatar"] as! String))
+                {
+                let urlReq = URLRequest(url: urlStr)
                 
                 let options = ImageLoadingOptions(
                   placeholder: UIImage(named: "user_avatar"),
                   transition: .fadeIn(duration: 0.5)
                 )
-                Nuke.loadImage(with: urlReq, options: options, into: userAvatarImageView)
+                    Nuke.loadImage(with: urlReq, options: options, into: self.userAvatarImageView)
 
-                userFullName.text = data?["fullname"] as? String
-                emailLabel.text = data?["email"] as? String
-                dobLabel.text = data?["dateOfBirth"] as? String
-                genderLabel.text = data?["gender"] as? String
-                addressLabel.text = data?["address"] as? String
-                phoneLabel.text = data?["phone"] as? String
+                    self.userFullName.text = data?["fullname"] as? String
+                    self.emailLabel.text = data?["email"] as? String
+                    self.dobLabel.text = data?["dateOfBirth"] as? String
+                    self.genderLabel.text = data?["gender"] as? String
+                    self.addressLabel.text = data?["address"] as? String
+                    self.phoneLabel.text = data?["phone"] as? String
                 
                 let following = data?["following"] as! [String]
-                followingLabel.text = "\(following.count) following"
+                    self.followingLabel.text = "\(following.count) following"
                 
                 let followers = data?["followers"] as! [String]
-                followersLabel.text = "\(followers.count) followers"
+                    self.followersLabel.text = "\(followers.count) followers"
                 
 
                 } else {
-                    print("Document does not exist")
+                    self.userAvatarImageView.image = UIImage.init(named: "user_avatar")
                 }
+            }
         }
         
         
