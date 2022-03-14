@@ -59,9 +59,6 @@ class LoginViewController: UIViewController {
     func loginManual() {
         Core.shared.setIsUserLogin(true)
         
-
-        
-       // let fillInfoVC = self.presentingViewController
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let dest = storyboard.instantiateViewController(withIdentifier: "ViewController") as! ViewController
         
@@ -71,16 +68,6 @@ class LoginViewController: UIViewController {
         
         self.present(dest, animated: true, completion: nil)
         
-//        self.dismiss(animated: true, completion: {
-//            let storyboard = UIStoryboard(name: "Main", bundle: nil)
-//            let dest = storyboard.instantiateViewController(withIdentifier: "ViewController") as! ViewController
-//
-//            dest.modalPresentationStyle  = .fullScreen
-//
-//            Core.shared.setIsNotFirstLauchApp()
-//
-//            fillInfoVC?.present(dest, animated: true, completion: nil)
-//        })
     }
     
     func loginFirebase()  {
@@ -196,7 +183,6 @@ class LoginViewController: UIViewController {
                                 Core.shared.setToken(token)
                                 userCollection.document(data?["UID"] as! String).updateData(["token": token])
 
-                                //Core.sharee.setCureentUserAvatarImageView
                             }
                             
                             Core.shared.setCurrentUserID(data?["UID"] as! String)

@@ -149,7 +149,7 @@ extension ChatFrameViewController: MessagesDataSource, MessagesLayoutDelegate, M
 
         switch message.kind {
         case .photo(let media):
-            guard let imageUrl = media.url else {
+            guard (media.url) != nil else {
                 return
             }
 
@@ -174,7 +174,7 @@ extension ChatFrameViewController: MessagesDataSource, MessagesLayoutDelegate, M
 
         if sender.senderId == selfSender?.senderId {
             // show our image
-            if let currentUserImageURL = self.senderPhotoURL {
+            if self.senderPhotoURL != nil {
 
             }
             else {
@@ -203,7 +203,7 @@ extension ChatFrameViewController: MessagesDataSource, MessagesLayoutDelegate, M
         }
         else {
             // other user image
-            if let otherUsrePHotoURL = self.otherUserPhotoURL {
+            if self.otherUserPhotoURL != nil {
 
             }
             else {
@@ -219,7 +219,7 @@ extension ChatFrameViewController: MessagesDataSource, MessagesLayoutDelegate, M
                     case .success(let url):
                         self?.otherUserPhotoURL = url
                         DispatchQueue.main.async {
-                           // avatarView.sd_setImage(with: url, completed: nil)
+                            
                         }
                     case .failure(let error):
                         print("\(error)")
@@ -326,6 +326,6 @@ extension ChatFrameViewController: MessageCellDelegate {
         }
 
         let message = messages[indexPath.section]
-        
+
     }
 }
