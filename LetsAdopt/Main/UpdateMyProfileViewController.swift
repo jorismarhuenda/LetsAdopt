@@ -328,14 +328,14 @@ class UpdateMyProfileViewController: UIViewController {
                                             message: "Where would you like to attach a photo from",
                                             preferredStyle: .actionSheet)
         actionSheet.addAction(UIAlertAction(title: "Camera", style: .default, handler: { [weak self] _ in
-
+#if !targetEnvironment(simulator)
           let cameraViewController = CameraViewController { [weak self] image, asset in
               // Do something with your image here.
               self?.dismiss(animated: true, completion: nil)
           }
 
           self?.present(cameraViewController, animated: true, completion: nil)
-
+            #endif
         }))
         actionSheet.addAction(UIAlertAction(title: "Photo Library", style: .default, handler: { [weak self] _ in
 
