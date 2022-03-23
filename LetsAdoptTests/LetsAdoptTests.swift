@@ -6,7 +6,7 @@
 //
 
 import XCTest
-@testable import LetsAdopt
+@testable import Pods_LetsAdopt
 
 class LetsAdoptTests: XCTestCase {
 

@@ -28,6 +28,7 @@
 		EC4C144F27C50CBB0042FC81 /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4C144E27C50CBB0042FC81 /* UserViewController.swift */; };
 		EC4C145127C5145F0042FC81 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4C145027C5145F0042FC81 /* LoadingViewController.swift */; };
 		EC6157FD27EB602D0043EC6C /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6157FC27EB602D0043EC6C /* UIImage+Extension.swift */; };
+		EC61580227EB7C430043EC6C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EC61580127EB7C430043EC6C /* GoogleService-Info.plist */; };
 		EC804B0427C2C0BD0097FFA1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC804B0327C2C0BD0097FFA1 /* AppDelegate.swift */; };
 		EC804B0627C2C0BD0097FFA1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC804B0527C2C0BD0097FFA1 /* SceneDelegate.swift */; };
 		EC804B0827C2C0BD0097FFA1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC804B0727C2C0BD0097FFA1 /* ViewController.swift */; };
@@ -37,7 +38,6 @@
 		EC804B1B27C2C0C00097FFA1 /* LetsAdoptTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC804B1A27C2C0C00097FFA1 /* LetsAdoptTests.swift */; };
 		EC804B2527C2C0C00097FFA1 /* LetsAdoptUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC804B2427C2C0C00097FFA1 /* LetsAdoptUITests.swift */; };
 		EC804B2727C2C0C00097FFA1 /* LetsAdoptUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC804B2627C2C0C00097FFA1 /* LetsAdoptUITestsLaunchTests.swift */; };
-		EC804B3427C2C4C00097FFA1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EC804B3327C2C4C00097FFA1 /* GoogleService-Info.plist */; };
 		EC804B3827C2C50D0097FFA1 /* IntroductionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC804B3727C2C50D0097FFA1 /* IntroductionDelegate.swift */; };
 		EC804B3A27C2C5370097FFA1 /* Introduction.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC804B3927C2C5370097FFA1 /* Introduction.storyboard */; };
 		EC804B3C27C2C5D90097FFA1 /* IntroductionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC804B3B27C2C5D90097FFA1 /* IntroductionViewController.swift */; };
@@ -119,6 +119,7 @@
 		EC4C144E27C50CBB0042FC81 /* UserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
 		EC4C145027C5145F0042FC81 /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
 		EC6157FC27EB602D0043EC6C /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
+		EC61580127EB7C430043EC6C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		EC804B0027C2C0BC0097FFA1 /* LetsAdopt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LetsAdopt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC804B0327C2C0BD0097FFA1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EC804B0527C2C0BD0097FFA1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -132,7 +133,6 @@
 		EC804B2027C2C0C00097FFA1 /* LetsAdoptUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LetsAdoptUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC804B2427C2C0C00097FFA1 /* LetsAdoptUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetsAdoptUITests.swift; sourceTree = "<group>"; };
 		EC804B2627C2C0C00097FFA1 /* LetsAdoptUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetsAdoptUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		EC804B3327C2C4C00097FFA1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		EC804B3727C2C50D0097FFA1 /* IntroductionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroductionDelegate.swift; sourceTree = "<group>"; };
 		EC804B3927C2C5370097FFA1 /* Introduction.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Introduction.storyboard; sourceTree = "<group>"; };
 		EC804B3B27C2C5D90097FFA1 /* IntroductionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroductionViewController.swift; sourceTree = "<group>"; };
@@ -243,6 +243,14 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		EC6157FE27EB6F900043EC6C /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				EC6157FC27EB602D0043EC6C /* UIImage+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		EC804AF727C2C0BC0097FFA1 = {
 			isa = PBXGroup;
 			children = (
@@ -272,11 +280,11 @@
 				EC804B5627C2CE280097FFA1 /* Core */,
 				EC804B4327C2C6920097FFA1 /* Authentification */,
 				EC804B3527C2C4DB0097FFA1 /* Introduction */,
-				EC804B3327C2C4C00097FFA1 /* GoogleService-Info.plist */,
 				EC804B0327C2C0BD0097FFA1 /* AppDelegate.swift */,
 				EC804B0527C2C0BD0097FFA1 /* SceneDelegate.swift */,
 				EC804B0C27C2C0BF0097FFA1 /* Assets.xcassets */,
 				EC804B0E27C2C0C00097FFA1 /* LaunchScreen.storyboard */,
+				EC61580127EB7C430043EC6C /* GoogleService-Info.plist */,
 				EC804B1127C2C0C00097FFA1 /* Info.plist */,
 				EC4C143B27C3B9B90042FC81 /* Config.plist */,
 			);
@@ -358,6 +366,7 @@
 		EC804B5E27C3AD080097FFA1 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				EC6157FE27EB6F900043EC6C /* Extension */,
 				EC4C149327C6C3200042FC81 /* Views */,
 				EC4C143D27C3C4C60042FC81 /* Models */,
 				EC804B6227C3ADAE0097FFA1 /* Delegate */,
@@ -381,7 +390,6 @@
 				ECB4620327D4EAF800DF9D93 /* ChatFrameViewController.swift */,
 				ECB4620527D4ECB700DF9D93 /* LocationPickerViewController.swift */,
 				ECB4620727D4EEBA00DF9D93 /* AppInfoViewController.swift */,
-				EC6157FC27EB602D0043EC6C /* UIImage+Extension.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -520,10 +528,10 @@
 				EC804B4527C2C6CF0097FFA1 /* Auth.storyboard in Resources */,
 				EC804B3A27C2C5370097FFA1 /* Introduction.storyboard in Resources */,
 				EC804B1027C2C0C00097FFA1 /* LaunchScreen.storyboard in Resources */,
-				EC804B3427C2C4C00097FFA1 /* GoogleService-Info.plist in Resources */,
 				EC804B0D27C2C0BF0097FFA1 /* Assets.xcassets in Resources */,
 				EC804B0B27C2C0BD0097FFA1 /* Main.storyboard in Resources */,
 				EC4C143C27C3B9B90042FC81 /* Config.plist in Resources */,
+				EC61580227EB7C430043EC6C /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
