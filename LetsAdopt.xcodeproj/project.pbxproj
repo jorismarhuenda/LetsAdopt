@@ -27,6 +27,7 @@
 		EC4C144D27C50C620042FC81 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4C144C27C50C610042FC81 /* ChatViewController.swift */; };
 		EC4C144F27C50CBB0042FC81 /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4C144E27C50CBB0042FC81 /* UserViewController.swift */; };
 		EC4C145127C5145F0042FC81 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4C145027C5145F0042FC81 /* LoadingViewController.swift */; };
+		EC6157FD27EB602D0043EC6C /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6157FC27EB602D0043EC6C /* UIImage+Extension.swift */; };
 		EC804B0427C2C0BD0097FFA1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC804B0327C2C0BD0097FFA1 /* AppDelegate.swift */; };
 		EC804B0627C2C0BD0097FFA1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC804B0527C2C0BD0097FFA1 /* SceneDelegate.swift */; };
 		EC804B0827C2C0BD0097FFA1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC804B0727C2C0BD0097FFA1 /* ViewController.swift */; };
@@ -117,6 +118,7 @@
 		EC4C144C27C50C610042FC81 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		EC4C144E27C50CBB0042FC81 /* UserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
 		EC4C145027C5145F0042FC81 /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
+		EC6157FC27EB602D0043EC6C /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
 		EC804B0027C2C0BC0097FFA1 /* LetsAdopt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LetsAdopt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC804B0327C2C0BD0097FFA1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EC804B0527C2C0BD0097FFA1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -379,6 +381,7 @@
 				ECB4620327D4EAF800DF9D93 /* ChatFrameViewController.swift */,
 				ECB4620527D4ECB700DF9D93 /* LocationPickerViewController.swift */,
 				ECB4620727D4EEBA00DF9D93 /* AppInfoViewController.swift */,
+				EC6157FC27EB602D0043EC6C /* UIImage+Extension.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -721,6 +724,7 @@
 				EC1CBE8727CCDD4B00136D08 /* ChatDetailViewController.swift in Sources */,
 				ECB4620427D4EAF800DF9D93 /* ChatFrameViewController.swift in Sources */,
 				EC804B4927C2C7840097FFA1 /* FillInfoViewController.swift in Sources */,
+				EC6157FD27EB602D0043EC6C /* UIImage+Extension.swift in Sources */,
 				EC1CBE8927CCDDF700136D08 /* SettingViewController.swift in Sources */,
 				EC804B4D27C2C7B50097FFA1 /* ForgotPasswordViewController.swift in Sources */,
 				EC804B6827C3AE0C0097FFA1 /* PetTypePickerViewDelegate.swift in Sources */,
@@ -915,9 +919,13 @@
 				DEVELOPMENT_TEAM = B64MGY93X6;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = LetsAdopt/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = 6;
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "Please allow access";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Please allow access";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -929,7 +937,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -944,9 +952,13 @@
 				DEVELOPMENT_TEAM = B64MGY93X6;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = LetsAdopt/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = 6;
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "Please allow access";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Please allow access";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -958,7 +970,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

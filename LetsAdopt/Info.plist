@@ -2,6 +2,10 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>tel</string>
+	</array>
 	<key>CFBundleURLTypes</key>
 	<array>
 		<dict>
@@ -24,13 +28,7 @@
 	<key>FacebookClientToken</key>
 	<string>840492d004d7d854e9db82ec2c2816c8</string>
 	<key>FacebookDisplayName</key>
-	<string>LETSADOPT</string>
-	<key>NSCameraUsageDescription</key>
-	<string>6</string>
-	<key>NSPhotoLibraryUsageDescription</key>
-	<string>Please allow access</string>
-	<key>NSPhotoLibraryAddUsageDescription</key>
-	<string>Please allow access</string>
+	<string>Let&apos;s Adopt</string>
 	<key>FirebaseScreenReportingEnabled</key>
 	<false/>
 	<key>UIApplicationSceneManifest</key>
