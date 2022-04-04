@@ -37,6 +37,7 @@
 		EC61581927FAD8F20043EC6C /* HistoryModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC61581827FAD8F20043EC6C /* HistoryModelTest.swift */; };
 		EC61581B27FADB410043EC6C /* ModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC61581A27FADB410043EC6C /* ModelTest.swift */; };
 		EC61581D27FB0E020043EC6C /* PetModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC61581C27FB0E020043EC6C /* PetModelTest.swift */; };
+		EC61581F27FB11DC0043EC6C /* ChatDatabaseManagerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC61581E27FB11DC0043EC6C /* ChatDatabaseManagerTest.swift */; };
 		EC804B0427C2C0BD0097FFA1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC804B0327C2C0BD0097FFA1 /* AppDelegate.swift */; };
 		EC804B0627C2C0BD0097FFA1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC804B0527C2C0BD0097FFA1 /* SceneDelegate.swift */; };
 		EC804B0827C2C0BD0097FFA1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC804B0727C2C0BD0097FFA1 /* ViewController.swift */; };
@@ -135,6 +136,7 @@
 		EC61581827FAD8F20043EC6C /* HistoryModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryModelTest.swift; sourceTree = "<group>"; };
 		EC61581A27FADB410043EC6C /* ModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelTest.swift; sourceTree = "<group>"; };
 		EC61581C27FB0E020043EC6C /* PetModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetModelTest.swift; sourceTree = "<group>"; };
+		EC61581E27FB11DC0043EC6C /* ChatDatabaseManagerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatDatabaseManagerTest.swift; sourceTree = "<group>"; };
 		EC804B0027C2C0BC0097FFA1 /* LetsAdopt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LetsAdopt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC804B0327C2C0BD0097FFA1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EC804B0527C2C0BD0097FFA1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -316,6 +318,7 @@
 				EC61581827FAD8F20043EC6C /* HistoryModelTest.swift */,
 				EC61581A27FADB410043EC6C /* ModelTest.swift */,
 				EC61581C27FB0E020043EC6C /* PetModelTest.swift */,
+				EC61581E27FB11DC0043EC6C /* ChatDatabaseManagerTest.swift */,
 			);
 			path = LetsAdoptTests;
 			sourceTree = "<group>";
@@ -775,6 +778,7 @@
 			files = (
 				EC61581927FAD8F20043EC6C /* HistoryModelTest.swift in Sources */,
 				EC61581727FAD7CD0043EC6C /* ConversationModelTest.swift in Sources */,
+				EC61581F27FB11DC0043EC6C /* ChatDatabaseManagerTest.swift in Sources */,
 				EC61580427EE147F0043EC6C /* URLSessionFake.swift in Sources */,
 				EC61581127F71D270043EC6C /* ExtensionUIImageTest.swift in Sources */,
 				EC61581B27FADB410043EC6C /* ModelTest.swift in Sources */,
