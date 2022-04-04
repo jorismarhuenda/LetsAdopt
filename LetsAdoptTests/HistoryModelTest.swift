@@ -6,7 +6,6 @@
 //
 
 import XCTest
-@testable import Pods_LetsAdopt
 @testable import LetsAdopt
 
 class HistoryModelTest: XCTestCase {
