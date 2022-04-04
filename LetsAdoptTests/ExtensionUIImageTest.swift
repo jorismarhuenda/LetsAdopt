@@ -29,7 +29,7 @@ import XCTest
              image = newImage!
          }
      }
-
+     
      func testResizedImage() {
          if let newImage = image?.resized(withPercentage: 0.5) {
              XCTAssertEqual(newImage.size.width, 512)
