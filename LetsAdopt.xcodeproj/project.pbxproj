@@ -32,6 +32,10 @@
 		EC61580427EE147F0043EC6C /* URLSessionFake.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC61580327EE147F0043EC6C /* URLSessionFake.swift */; };
 		EC61581127F71D270043EC6C /* ExtensionUIImageTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC61581027F71D260043EC6C /* ExtensionUIImageTest.swift */; };
 		EC61581327F71E720043EC6C /* CoreTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC61581227F71E720043EC6C /* CoreTest.swift */; };
+		EC61581527FAD6E80043EC6C /* ChatModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC61581427FAD6E80043EC6C /* ChatModelTest.swift */; };
+		EC61581727FAD7CD0043EC6C /* ConversationModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC61581627FAD7CD0043EC6C /* ConversationModelTest.swift */; };
+		EC61581927FAD8F20043EC6C /* HistoryModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC61581827FAD8F20043EC6C /* HistoryModelTest.swift */; };
+		EC61581B27FADB410043EC6C /* ModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC61581A27FADB410043EC6C /* ModelTest.swift */; };
 		EC804B0427C2C0BD0097FFA1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC804B0327C2C0BD0097FFA1 /* AppDelegate.swift */; };
 		EC804B0627C2C0BD0097FFA1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC804B0527C2C0BD0097FFA1 /* SceneDelegate.swift */; };
 		EC804B0827C2C0BD0097FFA1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC804B0727C2C0BD0097FFA1 /* ViewController.swift */; };
@@ -125,6 +129,10 @@
 		EC61580327EE147F0043EC6C /* URLSessionFake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionFake.swift; sourceTree = "<group>"; };
 		EC61581027F71D260043EC6C /* ExtensionUIImageTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionUIImageTest.swift; sourceTree = "<group>"; };
 		EC61581227F71E720043EC6C /* CoreTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreTest.swift; sourceTree = "<group>"; };
+		EC61581427FAD6E80043EC6C /* ChatModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatModelTest.swift; sourceTree = "<group>"; };
+		EC61581627FAD7CD0043EC6C /* ConversationModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationModelTest.swift; sourceTree = "<group>"; };
+		EC61581827FAD8F20043EC6C /* HistoryModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryModelTest.swift; sourceTree = "<group>"; };
+		EC61581A27FADB410043EC6C /* ModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelTest.swift; sourceTree = "<group>"; };
 		EC804B0027C2C0BC0097FFA1 /* LetsAdopt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LetsAdopt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC804B0327C2C0BD0097FFA1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EC804B0527C2C0BD0097FFA1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -301,6 +309,10 @@
 				EC61580327EE147F0043EC6C /* URLSessionFake.swift */,
 				EC61581027F71D260043EC6C /* ExtensionUIImageTest.swift */,
 				EC61581227F71E720043EC6C /* CoreTest.swift */,
+				EC61581427FAD6E80043EC6C /* ChatModelTest.swift */,
+				EC61581627FAD7CD0043EC6C /* ConversationModelTest.swift */,
+				EC61581827FAD8F20043EC6C /* HistoryModelTest.swift */,
+				EC61581A27FADB410043EC6C /* ModelTest.swift */,
 			);
 			path = LetsAdoptTests;
 			sourceTree = "<group>";
@@ -758,9 +770,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC61581927FAD8F20043EC6C /* HistoryModelTest.swift in Sources */,
+				EC61581727FAD7CD0043EC6C /* ConversationModelTest.swift in Sources */,
 				EC61580427EE147F0043EC6C /* URLSessionFake.swift in Sources */,
 				EC61581127F71D270043EC6C /* ExtensionUIImageTest.swift in Sources */,
+				EC61581B27FADB410043EC6C /* ModelTest.swift in Sources */,
 				EC61581327F71E720043EC6C /* CoreTest.swift in Sources */,
+				EC61581527FAD6E80043EC6C /* ChatModelTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
