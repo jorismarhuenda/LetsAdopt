@@ -30,13 +30,14 @@
 		EC6157FD27EB602D0043EC6C /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6157FC27EB602D0043EC6C /* UIImage+Extension.swift */; };
 		EC61580227EB7C430043EC6C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EC61580127EB7C430043EC6C /* GoogleService-Info.plist */; };
 		EC61580427EE147F0043EC6C /* URLSessionFake.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC61580327EE147F0043EC6C /* URLSessionFake.swift */; };
+		EC61581127F71D270043EC6C /* ExtensionUIImageTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC61581027F71D260043EC6C /* ExtensionUIImageTest.swift */; };
+		EC61581327F71E720043EC6C /* CoreTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC61581227F71E720043EC6C /* CoreTest.swift */; };
 		EC804B0427C2C0BD0097FFA1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC804B0327C2C0BD0097FFA1 /* AppDelegate.swift */; };
 		EC804B0627C2C0BD0097FFA1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC804B0527C2C0BD0097FFA1 /* SceneDelegate.swift */; };
 		EC804B0827C2C0BD0097FFA1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC804B0727C2C0BD0097FFA1 /* ViewController.swift */; };
 		EC804B0B27C2C0BD0097FFA1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC804B0927C2C0BD0097FFA1 /* Main.storyboard */; };
 		EC804B0D27C2C0BF0097FFA1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC804B0C27C2C0BF0097FFA1 /* Assets.xcassets */; };
 		EC804B1027C2C0C00097FFA1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC804B0E27C2C0C00097FFA1 /* LaunchScreen.storyboard */; };
-		EC804B1B27C2C0C00097FFA1 /* LetsAdoptTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC804B1A27C2C0C00097FFA1 /* LetsAdoptTests.swift */; };
 		EC804B2527C2C0C00097FFA1 /* LetsAdoptUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC804B2427C2C0C00097FFA1 /* LetsAdoptUITests.swift */; };
 		EC804B2727C2C0C00097FFA1 /* LetsAdoptUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC804B2627C2C0C00097FFA1 /* LetsAdoptUITestsLaunchTests.swift */; };
 		EC804B3827C2C50D0097FFA1 /* IntroductionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC804B3727C2C50D0097FFA1 /* IntroductionDelegate.swift */; };
@@ -122,6 +123,8 @@
 		EC6157FC27EB602D0043EC6C /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
 		EC61580127EB7C430043EC6C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		EC61580327EE147F0043EC6C /* URLSessionFake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionFake.swift; sourceTree = "<group>"; };
+		EC61581027F71D260043EC6C /* ExtensionUIImageTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionUIImageTest.swift; sourceTree = "<group>"; };
+		EC61581227F71E720043EC6C /* CoreTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreTest.swift; sourceTree = "<group>"; };
 		EC804B0027C2C0BC0097FFA1 /* LetsAdopt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LetsAdopt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC804B0327C2C0BD0097FFA1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EC804B0527C2C0BD0097FFA1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -131,7 +134,6 @@
 		EC804B0F27C2C0C00097FFA1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EC804B1127C2C0C00097FFA1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EC804B1627C2C0C00097FFA1 /* LetsAdoptTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LetsAdoptTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		EC804B1A27C2C0C00097FFA1 /* LetsAdoptTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetsAdoptTests.swift; sourceTree = "<group>"; };
 		EC804B2027C2C0C00097FFA1 /* LetsAdoptUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LetsAdoptUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC804B2427C2C0C00097FFA1 /* LetsAdoptUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetsAdoptUITests.swift; sourceTree = "<group>"; };
 		EC804B2627C2C0C00097FFA1 /* LetsAdoptUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetsAdoptUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -296,8 +298,9 @@
 		EC804B1927C2C0C00097FFA1 /* LetsAdoptTests */ = {
 			isa = PBXGroup;
 			children = (
-				EC804B1A27C2C0C00097FFA1 /* LetsAdoptTests.swift */,
 				EC61580327EE147F0043EC6C /* URLSessionFake.swift */,
+				EC61581027F71D260043EC6C /* ExtensionUIImageTest.swift */,
+				EC61581227F71E720043EC6C /* CoreTest.swift */,
 			);
 			path = LetsAdoptTests;
 			sourceTree = "<group>";
@@ -755,8 +758,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC804B1B27C2C0C00097FFA1 /* LetsAdoptTests.swift in Sources */,
 				EC61580427EE147F0043EC6C /* URLSessionFake.swift in Sources */,
+				EC61581127F71D270043EC6C /* ExtensionUIImageTest.swift in Sources */,
+				EC61581327F71E720043EC6C /* CoreTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

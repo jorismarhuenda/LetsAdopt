@@ -108,7 +108,9 @@ class Core {
     func clearKey(index : Int) {
         var searchHistoryKey = UserDefaults.standard.array(forKey: "searchHistoryKey") as? [String] ?? [String]()
         
-        searchHistoryKey.remove(at: index)
+        if searchHistoryKey.count > index {
+                    searchHistoryKey.remove(at: index)
+                }
         
         UserDefaults.standard.setValue(searchHistoryKey, forKey: "searchHistoryKey")
         
@@ -121,3 +123,23 @@ struct CurrentUser {
     var fullName: String;
     var avatarImageView : UIImageView
 }
+
+// MARK: - Extension UserDefaults
+ // Used to get reset methods for testing
+ extension UserDefaults {
+
+     enum Keys: String, CaseIterable {
+         case isFirstLauchApp
+         case IsUserLogin
+         case token
+         case currentEmail
+         case currentName
+         case currentUID
+         case keyName
+         case searchHistoryKey
+     }
+
+     func reset() {
+         Keys.allCases.forEach { removeObject(forKey: $0.rawValue) }
+     }
+ }
